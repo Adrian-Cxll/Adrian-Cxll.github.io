@@ -1,7 +1,16 @@
 @import url("https://fonts.googleapis.com/css?family=Lora:400,400i,700");
 
-::-moz-selection { background: rgb(193, 113, 113); color: #fff; }
-::selection { background: rgb(193, 113, 113); color: rgb(111, 30, 30); }
+
+
+::-moz-selection {
+  background: rgb(193, 113, 113);
+  color: #fff;
+}
+
+::selection {
+  background: rgb(193, 113, 113);
+  color: rgb(111, 30, 30);
+}
 
 body {
   border: 0;
@@ -377,7 +386,7 @@ video {
   width: 38px;
   height: 44px;
   background: url("img/cd-arrow-bottom.svg") no-repeat center center;
-  z-index: 100;
+  z-index: 10;
 }
 
 .cd-scroll-down-to-5 {
@@ -417,7 +426,6 @@ video {
 }
 
 .cd-img-replace {
-  /* replace text with a background-image */
   display: inline-block;
   overflow: hidden;
   text-indent: 100%;
@@ -435,7 +443,7 @@ video {
 /*----    burger menu   -------*/
 
 
-#burger_toggle {
+#burger_toggle{
   position: absolute;
   appearance: none;
   opacity: 0;
@@ -445,6 +453,8 @@ video {
   opacity: 1;
   visibility: visible;
 }
+
+
 
 #burger_toggle:checked~.menu .menu_nav_link span div,
 #burger_toggle:checked~.menu img,
@@ -558,7 +568,7 @@ video {
   justify-content: center;
   align-items: center;
   background: #1a1e23;
-  opacity: 0;
+  opacity: 0%;
   overflow-x: hidden;
   visibility: hidden;
   transition: 0.3s;
@@ -712,13 +722,11 @@ video {
 
 
 /*----- Display Dimensions-------*/
-@media (min-width:1353px) {
+@media (min-width:1353px) {}
 
-}
 @media (min-width:993px) {
 
   #text_introduction {
-
     font-size: 2.5rem;
     height: 360px;
     width: calc(1rem + 50vw);
@@ -742,7 +750,8 @@ video {
     visibility: hidden;
     height: 0rem;
   }
-  #text_introduction #text_doing{
+
+  #text_introduction #text_doing {
     font-size: 6.8vh;
   }
 }
@@ -753,8 +762,15 @@ video {
     padding-left: calc(1rem + 1vw);
     padding-top: 0.3rem;
   }
-  #text_introduction #text_doing{
+
+  #text_introduction #text_doing {
     font-size: 6vh;
+    margin: 0rem;
+  }
+
+  #text_introduction {
+    padding: 2rem;
+    height: auto;
   }
 
   #container {
@@ -767,6 +783,7 @@ video {
     flex-wrap: wrap;
     margin-top: 15rem;
   }
+
   /*  Set the Div in in the middle of vw, 1-3rem margin l-r, 2-5rem margin b;
   #container #card {
     position: relative;
@@ -800,7 +817,8 @@ video {
   video {
     visibility: hidden;
   }
-/* i don't want anymore.. */
+
+  /* i don't want anymore.. */
   #container {
     max-width: 99vw;
     margin-top: 33vh;
@@ -816,6 +834,7 @@ video {
     font-size: 11vw;
     line-height: 10.7vw;
   }
+
   #ImgTitspan {
     font-size: 4.7vw;
   }
@@ -850,9 +869,13 @@ video {
 
   #Sect3 {
     padding-top: 1rem;
+    height: 50vh;
   }
 
   #Sect4 {
     padding-top: 1rem;
   }
+
+
+
 }

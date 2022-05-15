@@ -12,6 +12,7 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
 
 
 </head>
@@ -34,8 +35,8 @@
     <div class="menu">
       <div class="menu_inner">
         <ul class="menu_nav">
-          <li class="menu_nav_item"><a class="menu_nav_link" href="#Sect1"><span>
-                <!--javascript:window.location.href=window.location.href-->
+          <li class="menu_nav_item"><a class="menu_nav_link" href="javascript:location.reload()" target="_self"><span> <!-- Js or #Sect1-->
+                <!--<script> window.location.href = window.location.href </script>-->
                 <div>Home</div>
               </span></a></li>
           <li class="menu_nav_item"><a class="menu_nav_link" href="#Sect2"><span>
@@ -86,7 +87,8 @@
       </video>
     </div>
 
-    <p id="ImgTit">" Know you have what it takes "<br><span id="ImgTitspan">&nbsp&nbsp&nbsp&nbsp-&nbsp Saab &nbsp-</span></p>
+    <p id="ImgTit">" Know you have what it takes "<br><span id="ImgTitspan">&nbsp&nbsp&nbsp&nbsp-&nbsp Saab
+        &nbsp-</span></p>
     <a href="#Sect2" class="cd-scroll-down cd-img-replace"></a>
 
 
@@ -161,7 +163,7 @@
       <b>
         Hey there (sy) This is Adrian, a 17 years old Student from Germany. I'm a part-time gamer and a beginner in
         development. While using Java and Assembler in School, I try my hand at projects like Websites at home.<br>That
-        being said, I love to drive on curvy roads which are all around me.
+        being said, I love to drive on curvy roads which are all around here.
 
       </b>
     </div>
@@ -222,6 +224,12 @@
       });
     });
   </script>
+  <!-- WHY CAN'T YOU WORK
+  <script> 
+    $('#burger_toggle .menu_nav_link').click(function(){
+    $("#burger_toggle").collapse('hide');
+    }); 
+  </script>
+  -->
 </body>
-
 </html>
