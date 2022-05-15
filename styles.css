@@ -5,6 +5,7 @@
   scrollbar-width: auto;
   scrollbar-color: rgb(111, 30, 30) #1f1f1f;
 }
+
 /* Chrome / Edge / Safari */
 *::-webkit-scrollbar {
   width: 8px;
@@ -461,7 +462,7 @@ video {
 /*----    burger menu   -------*/
 
 
-#burger_toggle{
+#burger_toggle {
   position: absolute;
   appearance: none;
   opacity: 0;
