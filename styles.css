@@ -62,6 +62,12 @@ body {
   margin: 0;
   text-rendering: optimizeLegibility;
   z-index: 10;
+  line-height: 5rem;
+}
+
+
+#ImgTitspan {
+  font-size: 3rem;
 }
 
 #ImgTit2 {
@@ -206,6 +212,7 @@ body {
 
 
 
+
 /*-------------  Sections  -------------------------*/
 
 #Sect1 {
@@ -261,6 +268,8 @@ video {
   height: 100vh;
   box-shadow: 1px -6px 14px 6px rgba(0, 0, 0, 0.84);
 }
+
+
 
 
 /*----------  Selective Boxes  --------------*/
@@ -796,10 +805,19 @@ video {
     max-width: 99vw;
     margin-top: 33vh;
     position: absolute;
+    visibility: hidden;
   }
 
   #container #card {
     margin-left: calc(50vw + 5vw);
+  }
+
+  #ImgTit {
+    font-size: 11vw;
+    line-height: 10.7vw;
+  }
+  #ImgTitspan {
+    font-size: 4.7vw;
   }
 
   .cd-scroll-down-to-5 {
