@@ -1,6 +1,24 @@
 @import url("https://fonts.googleapis.com/css?family=Lora:400,400i,700");
 
+/* Firefox */
+* {
+  scrollbar-width: auto;
+  scrollbar-color: rgb(111, 30, 30) #1f1f1f;
+}
+/* Chrome / Edge / Safari */
+*::-webkit-scrollbar {
+  width: 8px;
+}
 
+*::-webkit-scrollbar-track {
+  background: #1f1f1f;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: rgb(111, 30, 30);
+  border-radius: 4px;
+  border: 0px solid rgb(111, 30, 30);
+}
 
 ::-moz-selection {
   background: rgb(193, 113, 113);
@@ -419,8 +437,8 @@ video {
   bottom: calc(2rem + 2.3vw);
   width: calc(1rem + 3vw);
   height: calc(1rem + 3vw);
-  background: linear-gradient(to top right, red, blue);
-  opacity: 50%;
+  background: linear-gradient(to top right, rgb(169, 0, 0), rgb(0, 0, 170));
+  opacity: 90%;
   border-radius: 50%;
   display: inline-block;
 }
@@ -876,6 +894,15 @@ video {
     padding-top: 1rem;
   }
 
+  .dot {
+    height: 0px;
+    width: 0px;
+  }
 
-
+  .cd-scroll-down {
+    width: 0;
+    height: 0;
+    background: black;
+    z-index: -1;
+  }
 }
