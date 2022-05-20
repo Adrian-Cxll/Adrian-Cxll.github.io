@@ -315,7 +315,7 @@ video {
   color: rgb(17, 14, 14);
 }
 
-.about-phpkida,
+.about-3sel,
 .team,
 .gallery,
 .testimonials,
@@ -324,7 +324,7 @@ video {
   text-align: center;
 }
 
-.about-top-phpkida p {
+.about-top-3sel p {
   font-size: 1.3em;
   margin: 2em auto 0em;
   width: 64%;
@@ -394,20 +394,60 @@ video {
 .fa {
   font-size: 50px;
 }
-/*
+
+/* TODO: */
+
 .footer {
-  min-height: 100%;
-  display: flex;
-  flex-direction: column;
+  width: 90%;
+  max-width: 1440px;
+  margin: 0px auto;
+  margin-bottom: 0px;
+  text-align: center;
+  margin-bottom: 50px;
 }
 
-#Sect5_1 {
-  margin-top: 2rem;
-  height: 20vh;
-  width: 100%;
-  background-color: black;
+#logo {
+  background-image: url("img/Cxll_PP_R.ico");
+  background-position: center;
+  background-size: cover;
+  background-color: rgb(47, 26, 26);
+  width: 50px;
+  height: 50px;
+  border-radius: 50em;
+  float: inline-start;
 }
-*/
+
+#footer_webtext {
+  margin-top: 0;
+  margin-bottom: 5rem;
+  padding-top: 1rem;
+  float: inline-end;
+  text-align: right;
+  color: rgb(23, 15, 15);
+  font-family: 'Quicksand';
+  user-select: none;
+  font-weight: bold;
+}
+
+
+.wrapper {
+  transform-origin: center bottom 0px;
+  transition: all 0.5s ease 0s;
+  box-shadow: 0px 22px 54px rgba(0, 0, 0, 0.5);
+}
+
+body.tight .wrapper {
+  transform: translateY(-60px) scale(0.9);
+  cursor: pointer;
+}
+
+.footer {
+  width: 90%;
+  max-width: 1440px;
+  margin: 0px auto;
+  text-align: center;
+  margin-bottom: 50px;
+}
 
 /*------------ scroll down ------------------*/
 
