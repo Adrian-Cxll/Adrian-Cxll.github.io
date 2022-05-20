@@ -204,6 +204,20 @@ body {
 
 }
 
+#footer_base_right #footer_base_left {
+  float: left;
+}
+#footer_base_right {
+  background-color: blue;
+  min-height: 100%;
+  min-width: 50%;
+}
+#footer_base_left {
+  background-color: red;
+  min-height: 100%;
+  min-width: 50%;
+}
+
 
 
 /*-------------  Sections  -------------------------*/
@@ -257,11 +271,17 @@ video {
 
 #Sect5 {
   background: linear-gradient(to bottom right, brown, red, violet, blue);
-  opacity: 40%;
+  opacity: 30%;
   height: 100vh;
   box-shadow: 1px -6px 14px 6px rgba(0, 0, 0, 0.84);
 }
 
+#footer {
+  height: 20rem;
+  background-color: #1a1e23;
+  padding-bottom: 1.3rem;
+  padding-top: 1.3rem;
+}
 
 /*----------  Selective Boxes  --------------*/
 #title_about {
