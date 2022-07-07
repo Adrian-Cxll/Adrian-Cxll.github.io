@@ -238,9 +238,6 @@ body {
 
 }
 
-
-
-
 /*-------------  Sections  -------------------------*/
 
 #Sect1 {
@@ -304,9 +301,8 @@ video {
 }
 */
 
-
-
 /*----------  Selective Boxes  --------------*/
+
 #title_about {
   user-select: none;
   padding-top: 8rem;
@@ -429,7 +425,6 @@ video {
   font-weight: bold;
 }
 
-
 .wrapper {
   transform-origin: center bottom 0px;
   transition: all 0.5s ease 0s;
@@ -510,16 +505,7 @@ body.tight .wrapper {
   white-space: nowrap;
 }
 
-
-
-
-
-
-
-
-
 /*----    burger menu   -------*/
-
 
 #burger_toggle {
   position: absolute;
@@ -531,8 +517,6 @@ body.tight .wrapper {
   opacity: 1;
   visibility: visible;
 }
-
-
 
 #burger_toggle:checked~.menu .menu_nav_link span div,
 #burger_toggle:checked~.menu img,
@@ -794,12 +778,8 @@ body.tight .wrapper {
   transform: translateY(102%);
 }
 
-
-
-
-
-
 /*----- Display Dimensions-------*/
+
 @media (min-width:1353px) {}
 
 @media (min-width:993px) {
@@ -888,6 +868,7 @@ body.tight .wrapper {
     height: calc(1rem + 1vw);
     
   }*/
+  
   .burger_menu {
     left: calc(100vw - 8rem);
   }
