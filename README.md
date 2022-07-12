@@ -1,10 +1,29 @@
 # Adrian-Cxll.github.io
-### Website to play and try out new things (html, CSS, and some Js)
 
 
-> Still in work,
-  and still much to do.
+> Still in work and much to do.
+
+---
+
+ #### Content:
+ 
+
  
  
+* Home
+  * Informations
+  * Contact
+  * Link Downloads
+  * short text
+* Blog (planned)
+  * Heading
+  * blog-list
+* Downloads (Work in progress)
+  * [Video]-heading
+  * List of Downloads (Wip)
+* Informations (planned)
+  * --
+* Contact (planned)
+  * --
 
  

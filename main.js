@@ -12,7 +12,7 @@ $(document).ready(function($) {
       }
     });
   
-    //BACK TO PRESENTATION MODE
+    //BACK TO NORMAL VIEW
     $("html").on("click", "body.tight .wrapper", function() {
       $('html, body').animate({
         scrollTop: $('.wrapper').outerHeight() - $(window).height()
