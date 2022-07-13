@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron&display=swap');
+
+.scroll-media {
+    font-size: larger;
+    box-shadow: 0px 22px 54px rgba(0, 0, 0, 0.5);
+    -webkit-box-shadow: 0px 22px 54px rgba(0, 0, 0, 0.5);
+
+}
+
+.footer {
+    margin-top: 2rem !important;
+
+}
+
+#header {
+    opacity: 95% !important;
+}
+
+.scroll-media {
+    background-color: black !important;
+}
+
+
+
+/* Firefox *//*
+* {
+    scrollbar-color: rgb(111, 30, 30) rgba(191, 9, 9, 0.395) !important;
+}
+
+/* Chrome / Edge / Safari *//*
+*::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-moz-selection {
+    background: rgba(191, 9, 9, 0.395) !important;
+}
+
+::selection {
+    background: rgba(191, 9, 9, 0.395) !important;
+}
+*/
+
+
+
+.Video {
+    position: absolute;
+    height: 60vh;
+    width: 100%;
+    object-fit: cover;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+}
+
+.headingwrap {
+    height: 0;
+    position: relative;
+    padding: 2em 0;
+}
+
+/*.heading .headingwrap{
+    height: 70vh; 
+  /* background-image: url(https://cdn.80.lv/api/upload/content/d2/5d2d431ab0329.png); */
+/* background-: url(https://www.polestar.com/dato-assets/11286/1656494040-polestar-motion-blur-15s-master-16-9-with-music-2-1.mp4); */
+/*background-position: center;
+  background-size: cover;
+  background-color: #cccccc;
+  z-index: -1;
+  position: absolute;
+height: 80vh;
+width: 80%;
+object-fit: cover;
+z-index: 0;
+right: 0;
+bottom: 0;
+overflow: hidden;
+}*/
+
+.headerDownloads {
+    margin-top: 0;
+    padding: 30vh 0 0 10vh !important;
+    font-size: 8rem;
+    font-family: 'Orbitron', sans-serif;
+    letter-spacing: 0.8rem;
+    color: azure;
+    z-index: 10;
+}
+
+/*.spacerlr {
+    height: 0;
+    border-style: solid;
+    border-width: 100px 0 0 100vw;
+    border-color: #874b922a #874b922a transparent transparent;
+}*/
+
+
+
+.Download {
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+}
+
+
+
+h2 h3 {
+    margin-left: 500px;
+    display: inline-block;
+    vertical-align: top;
+    padding-top: 10rem !important;
+    vertical-align: middle !important;
+    justify-content: center !important;
+    text-align: center !important;
+}
+
+h2 {
+    min-width: 20vw;
+    text-align: center;
+    text-rendering: optimizeLegibility;
+}
+
+.flex {
+    display: flex;
+}
+
+
+/*****************************/
+
+#Download1Picture {
+    height: auto;
+    width: 20rem;
+    margin: 3rem;
+}

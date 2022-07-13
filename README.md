@@ -1,20 +1,29 @@
 # Adrian-Cxll.github.io
-### Website to play and try out new things (html, CSS, [js])
 
 
-> Still in work,
- - pieces missing
-   - Section5
-   - footer
- - improvement needed
-   - menu
-   - Title2 for mobile
-   - header-text
-   - header
-   - etc.
- - replace
-   - Sect3 Text
-   - Sect 4 Text
-   - menu pictures
-   - etc.
+> Still in work and much to do.
+
+---
+
+ #### Content:
+ 
+
+ 
+ 
+* Home
+  * Informations
+  * Contact
+  * Link Downloads
+  * short text
+* Blog (planned)
+  * Heading
+  * blog-list
+* Downloads (Work in progress)
+  * [Video]-heading
+  * List of Downloads (Wip)
+* Informations (planned)
+  * --
+* Contact (planned)
+  * --
+
  
