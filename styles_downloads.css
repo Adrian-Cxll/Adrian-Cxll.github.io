@@ -102,21 +102,24 @@ overflow: hidden;
 
 .headerDownloads {
     margin-top: 0;
-    padding: 12vh 0 0 10vh !important;
+    padding: 12vh 10vw 0 10vw;
     font-size: 8rem;
     font-family: 'Orbitron', sans-serif;
     letter-spacing: 0.8rem;
     color: azure;
-    z-index: 10;
-    position: absolute;
+    z-index: 1;
+    position: relative;
+    user-select: none;
 }
 
-/*.spacerlr {
-    height: 0;
+.spacerlr {
+    height: 10vh;
+    visibility: hidden;
+    /* height: 0;
     border-style: solid;
     border-width: 100px 0 0 100vw;
-    border-color: #874b922a #874b922a transparent transparent;
-}*/
+    border-color: #874b922a #874b922a transparent transparent; */
+}
 
 
 
@@ -148,34 +151,87 @@ h2 {
 }
 
 .container01 {
-/*     
+    /* float: left; */
     position: relative;
     display: flex;
-    justify-content: center;
     align-items: center;
     max-width: 95vw;
     z-index: 1;
     flex-wrap: wrap;
-    margin-top: 15rem;
-    max-width: 99vw;
-    margin-top: 33vh;
-    position: absolute;
-    visibility: hidden; */
+    margin-top: 8rem;
 }
-/* .containerbody {
-    position: absolute;
-    width: 70vw;
-    padding-left: 10rem; 
-} */
 
+.container01 .containerbody {
+    position: relative;
+    margin-left: 10vw;
+    box-shadow: 0 25px 80px rgba(1, 0, 0, .9);
+    border-radius: 15px;
+    background: rgba(0, 0, 0, 0.5);
+    overflow: hidden;
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    height: 25vh;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.container01 .containerbody .containercontent {
+    padding: 20xp, 20xp, 20xp, 0;
+    transition: 0.5;
+}
+
+.containercontent {
+    width: 72vw !important;
+    z-index: 10;
+    /* display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start; */
+
+
+}
+
+.containerpicture {
+    display: block;
+    object-fit: cover;
+    height: 25vh;
+    width: 35vh;
+    float: left;
+    border-radius: 15px;
+    overflow: hidden;
+    /* align-self: flex-start; */
+    opacity: 86%;
+    align-items: center;
+}
+
+.containerpictureactual {
+    align-self: center;
+    width: 25vw;
+    height: 25vh;
+    object-fit: cover;
+}
 
 
 
 .containertextwrap {
-    visibility: hidden; /*TODO:*/
+    padding-left: 35vh;
+    /*TODO:*/
     position: absolute;
     overflow: hidden;
     object-fit: cover;
+}
+
+.containertext {
+    font-size: 2.5rem !important;
+    color: white;
+    font-style: inherit;
+    user-select: none;
+    margin-left: 1rem;
+    margin-top: 1rem;
+    margin-bottom: 2.5rem;
+    font-size: 2.9vw;
+
 }
 
 .backroundvideo2 {
@@ -229,4 +285,33 @@ h2 {
     height: auto;
     width: 20rem;
     margin: 3rem;
+}
+
+
+
+
+@media (max-width:993px) {
+    .headerDownloads {
+        padding-top: 5vh;
+        font-size: 4rem;
+    }
+
+    .containertext {
+        visibility: hidden;
+        font-size: 0.2xp;
+    }
+    .containertextwrap {
+        visibility: hidden;
+    }
+
+    .containerpicture .containerpictureactual{
+        display: block;
+        object-fit: cover;
+        height: 50vh !important;
+        width: 80vw !important;
+        /* align-self: flex-start; */
+        opacity: 100%;
+        align-items: center;
+    }
+
 }
