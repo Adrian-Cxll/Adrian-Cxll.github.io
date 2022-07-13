@@ -18,16 +18,29 @@
 
 .scroll-media {
     background-color: black !important;
+
+}
+
+.videobackround {
+    object-fit: cover;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 10vh;
+    z-index: -1;
 }
 
 
-
-/* Firefox *//*
+/* Firefox */
+/*
 * {
     scrollbar-color: rgb(111, 30, 30) rgba(191, 9, 9, 0.395) !important;
 }
 
-/* Chrome / Edge / Safari *//*
+/* Chrome / Edge / Safari */
+/*
 *::-webkit-scrollbar {
     width: 8px;
 }
@@ -42,6 +55,13 @@
 */
 
 
+.heading {
+    height: 60vh;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+
+}
 
 .Video {
     position: absolute;
@@ -53,6 +73,7 @@
     top: 0;
     left: 0;
     overflow: hidden;
+    z-index: 1;
 }
 
 .headingwrap {
@@ -81,12 +102,13 @@ overflow: hidden;
 
 .headerDownloads {
     margin-top: 0;
-    padding: 30vh 0 0 10vh !important;
+    padding: 12vh 0 0 10vh !important;
     font-size: 8rem;
     font-family: 'Orbitron', sans-serif;
     letter-spacing: 0.8rem;
     color: azure;
     z-index: 10;
+    position: absolute;
 }
 
 /*.spacerlr {
@@ -124,6 +146,81 @@ h2 {
 .flex {
     display: flex;
 }
+
+.container01 {
+/*     
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 95vw;
+    z-index: 1;
+    flex-wrap: wrap;
+    margin-top: 15rem;
+    max-width: 99vw;
+    margin-top: 33vh;
+    position: absolute;
+    visibility: hidden; */
+}
+/* .containerbody {
+    position: absolute;
+    width: 70vw;
+    padding-left: 10rem; 
+} */
+
+
+
+
+.containertextwrap {
+    visibility: hidden; /*TODO:*/
+    position: absolute;
+    overflow: hidden;
+    object-fit: cover;
+}
+
+.backroundvideo2 {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    z-index: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 /*****************************/

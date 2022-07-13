@@ -4,8 +4,36 @@ a {
 
 @import url("https://fonts.googleapis.com/css?family=Lora:400,400i,700");
 
-::-moz-selection { background: rgb(193, 113, 113); color: #fff; }
-::selection { background: rgb(193, 113, 113); color: rgb(111, 30, 30); }
+/* Firefox */
+* {
+  scrollbar-width: auto;
+  scrollbar-color: rgb(111, 30, 30) #1f1f1f;
+}
+
+/* Chrome / Edge / Safari */
+*::-webkit-scrollbar {
+  width: 8px;
+}
+
+*::-webkit-scrollbar-track {
+  background: #1f1f1f;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: rgb(111, 30, 30);
+  border-radius: 4px;
+  border: 0px solid rgb(111, 30, 30);
+}
+
+::-moz-selection {
+  background: rgb(193, 113, 113);
+  color: #fff;
+}
+
+::selection {
+  background: rgb(193, 113, 113);
+  color: rgb(111, 30, 30);
+}
 
 /* next 2 for *no* Website Scrollbar, for div scroll bar (downloads)*/
 .main-window .scroll-div {
@@ -81,6 +109,12 @@ body {
   margin: 0;
   text-rendering: optimizeLegibility;
   z-index: 10;
+  line-height: 5rem;
+}
+
+
+#ImgTitspan {
+  font-size: 3rem;
 }
 
 #ImgTit2 {
@@ -205,7 +239,7 @@ body {
   font-family: 'Orbitron', sans-serif !important;
 
   user-select: none;
-  font-size: 6vw;
+  font-size: 5vw;
   padding-left: calc(1rem + 4vw);
   padding-top: calc(1rem + 5vh);
   margin: 0;
@@ -225,22 +259,6 @@ body {
 
 }
 
-#footer_base_right #footer_base_left {
-  float: left;
-}
-#footer_base_right {
-  background-color: blue;
-  min-height: 100%;
-  min-width: 50%;
-}
-#footer_base_left {
-  background-color: red;
-  min-height: 100%;
-  min-width: 50%;
-}
-
-
-
 /*-------------  Sections  -------------------------*/
 
 #Sect1 {
@@ -259,7 +277,7 @@ body {
 
 video {
   position: absolute;
-  height: 100vh;
+  height: 100%;
   width: 100%;
   object-fit: cover;
   z-index: 0;
@@ -296,14 +314,26 @@ video {
 
   height: 60vh;
   box-shadow: 1px -6px 14px 6px rgba(0, 0, 0, 0.84);
+  
 }
+/*TODO:*/
 #Sect5_backround {
   background-color: black;
+  /*
   background-image: url(https://papers.co/wallpaper/papers.co-sk61-dark-purple-blur-gradation-36-3840x2400-4k-wallpaper.jpg);
   background-position: center;
-  background-size: cover;
-  height: 60vh;
+  background-size: cover; */
+  height: 60vh !important;
   width: 100%;
+  position: relative;
+  z-index: -1;
+}
+#Sect5_backround .Sect5_backroundvideo {
+  width: 100%;
+  height: 60vh !important;
+  position: absolute !important;
+  object-fit: cover !important;
+  z-index: -1 !important;
 }
 
 
@@ -317,7 +347,7 @@ video {
   color: rgb(17, 14, 14);
 }
 
-.about-phpkida,
+.about-3sel,
 .team,
 .gallery,
 .testimonials,
@@ -326,7 +356,7 @@ video {
   text-align: center;
 }
 
-.about-top-phpkida p {
+.about-top-3sel p {
   font-size: 1.3em;
   margin: 2em auto 0em;
   width: 64%;
@@ -464,7 +494,7 @@ body.tight .wrapper {
   width: 38px;
   height: 44px;
   background: url("img/cd-arrow-bottom.svg") no-repeat center center;
-  z-index: 100;
+  z-index: 10;
 }
 
 .cd-scroll-down-to-5 {
@@ -497,14 +527,13 @@ body.tight .wrapper {
   bottom: calc(2rem + 2.3vw);
   width: calc(1rem + 3vw);
   height: calc(1rem + 3vw);
-  background: linear-gradient(to top right, red, blue);
-  opacity: 50%;
+  background: linear-gradient(to top right, rgb(169, 0, 0), rgb(0, 0, 170));
+  opacity: 90%;
   border-radius: 50%;
   display: inline-block;
 }
 
 .cd-img-replace {
-  /* replace text with a background-image */
   display: inline-block;
   overflow: hidden;
   text-indent: 100%;
@@ -745,8 +774,7 @@ main .content {
 @media (min-width:993px) {
 
   #text_introduction {
-
-    font-size: 2.5rem;
+    font-size: calc(2rem + 0.5vw);
     height: 360px;
     width: calc(1rem + 50vw);
     /* margin: 2rem 50vw 0 calc(4rem + 5vw); */
@@ -769,7 +797,8 @@ main .content {
     visibility: hidden;
     height: 0rem;
   }
-  #text_introduction #text_doing{
+
+  #text_introduction #text_doing {
     font-size: 6.8vh;
   }
 }
@@ -780,8 +809,15 @@ main .content {
     padding-left: calc(1rem + 1vw);
     padding-top: 0.3rem;
   }
-  #text_introduction #text_doing{
+
+  #text_introduction #text_doing {
     font-size: 6vh;
+    margin: 0rem;
+  }
+
+  #text_introduction {
+    padding: 2rem;
+    height: auto;
   }
 
   #container {
@@ -794,6 +830,7 @@ main .content {
     flex-wrap: wrap;
     margin-top: 15rem;
   }
+
   /*  Set the Div in in the middle of vw, 1-3rem margin l-r, 2-5rem margin b;
   #container #card {
     position: relative;
@@ -828,15 +865,26 @@ main .content {
   video {
     visibility: hidden;
   }
-/* i don't want anymore.. */
+
+  /* i don't want anymore.. */
   #container {
     max-width: 99vw;
     margin-top: 33vh;
     position: absolute;
+    visibility: hidden;
   }
 
   #container #card {
     margin-left: calc(50vw + 5vw);
+  }
+
+  #ImgTit {
+    font-size: 11vw;
+    line-height: 10.7vw;
+  }
+
+  #ImgTitspan {
+    font-size: 4.7vw;
   }
 
   .cd-scroll-down-to-5 {
@@ -869,9 +917,22 @@ main .content {
 
   #Sect3 {
     padding-top: 1rem;
+    height: 50vh;
   }
 
   #Sect4 {
     padding-top: 1rem;
+  }
+
+  .dot {
+    height: 0px;
+    width: 0px;
+  }
+
+  .cd-scroll-down {
+    width: 0;
+    height: 0;
+    background: black;
+    z-index: -1;
   }
 }
