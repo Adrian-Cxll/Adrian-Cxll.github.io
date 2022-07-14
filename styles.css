@@ -314,8 +314,9 @@ video {
 
   height: 60vh;
   box-shadow: 1px -6px 14px 6px rgba(0, 0, 0, 0.84);
-  
+
 }
+
 /*TODO:*/
 #Sect5_backround {
   background-color: black;
@@ -328,6 +329,7 @@ video {
   position: relative;
   z-index: -1;
 }
+
 #Sect5_backround .Sect5_backroundvideo {
   width: 100%;
   height: 60vh !important;
@@ -924,6 +926,11 @@ main .content {
     padding-top: 1rem;
   }
 
+  #Sect5_backround {
+    background: linear-gradient(to top left, rgb(27, 10, 27), rgb(26, 0, 51)) !important;
+    background-color: black;
+  }
+
   .dot {
     height: 0px;
     width: 0px;
@@ -935,4 +942,103 @@ main .content {
     background: black;
     z-index: -1;
   }
+}
+
+
+
+
+
+
+
+
+
+
+.container01 {
+  /* float: left; */
+  position: relative;
+  display: flex;
+  align-items: center;
+  max-width: 95vw;
+  z-index: 1;
+  flex-wrap: wrap;
+  margin-top: 8rem;
+}
+
+.containerbody {
+
+  box-shadow: 0 25px 80px rgba(1, 0, 0, .9);
+}
+
+.container01 .containerbody {
+  position: relative;
+  background: linear-gradient(to top left, rgb(106, 10, 109), rgb(100, 23, 23)) !important;
+  background-color: black;
+
+  margin-left: 5vw;
+  box-shadow: 0 25px 80px rgba(1, 0, 0, .9);
+  border-radius: 15px;
+  background: rgba(0, 0, 0, 0.5);
+  overflow: hidden;
+  display: flex;
+  /* justify-content: center; */
+  height: 25vh;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.container01 .containerbody .containercontent {
+  padding: 20xp, 20xp, 20xp, 0;
+  transition: 0.5;
+}
+
+.containercontent {
+  width: 50vw !important;
+  z-index: 10;
+  /* display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start; */
+
+
+}
+
+.containerpicture {
+  display: block;
+  object-fit: cover;
+  height: 25vh;
+  width: 35vh;
+  float: left;
+  border-radius: 15px;
+  overflow: hidden;
+  /* align-self: flex-start; */
+  opacity: 86%;
+  align-items: center;
+}
+
+.containerpictureactual {
+  align-self: center;
+  width: 25vw;
+  height: 25vh;
+  object-fit: cover;
+}
+
+
+
+.containertextwrap {
+  padding: 3vh;
+  /*TODO:*/
+  position: absolute;
+  overflow: hidden;
+  object-fit: cover;
+}
+
+.containertext {
+  font-size: 2.5rem !important;
+  color: white;
+  font-style: inherit;
+  user-select: none;
+  margin-left: 1rem;
+  margin-top: 0rem;
+  font-size: 2.9vw;
+
 }

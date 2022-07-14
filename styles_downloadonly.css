@@ -1,0 +1,3 @@
+nav::before {
+    background: linear-gradient(to top left, rgb(73, 191, 255), rgb(0, 0, 0)) !important;
+}
