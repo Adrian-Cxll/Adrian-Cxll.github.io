@@ -256,34 +256,52 @@ h2 {
 
 }
 
-
 .Downloadcontainerbody {
     height: 6rem !important;
     width: 35rem;
-    align-items: baseline !important;
-    padding-left: 9rem;
+    margin-left: 0 !important;
+    align-items: center !important;
 }
 
 .Downloadcontainertextwrap {
     padding: 0 !important;
+    position: unset;
+    align-items: center;
+
 }
 
 .Downloadcontainer01 {
-    padding-left: 27vw;
+    text-align: center !important; 
     margin-bottom: 5rem;
+    display: flex;
+    padding-left: calc(50vw - 17.5rem) !important;
+
+
 }
 
 .Downloadcontainertext {
+    text-decoration: none !important;
     font-size: 3rem !important;
     color: white;
     font-style: inherit;
     user-select: none;
-    margin-left: 1rem;
-    margin-top: 1rem;
-    margin-bottom: 2.5rem;
     font-size: 2.9vw;
-    align-self: center;
+    margin-bottom: 0 !important;
 }
+
+/* TODO: */
+
+.Downloadtext {
+    margin: 0xp !important;
+}
+Downloadtext:link { text-decoration: none; }
+
+Downloadtext:visited { text-decoration: none; }
+
+Downloadtext:hover { text-decoration: none; }
+
+Downloadtext:active { text-decoration: none; }
+
 
 .backroundvideo2 {
     position: absolute;
@@ -297,11 +315,6 @@ h2 {
     overflow: hidden;
     z-index: 0;
 }
-
-
-
-
-
 
 
 
@@ -358,9 +371,9 @@ h2 {
         font-size: 0.2xp;
     }
 
-    .containertextwrap {
+    /* .containertextwrap {
         visibility: hidden;
-    }
+    } */
 
     .containerpicture .containerpictureactual {
         display: block;
@@ -375,15 +388,6 @@ h2 {
     .foregroundVideo::after {
         margin-left: 50vw;
     }
-    .Downloadcontainer01 {
-        padding-left: 0vw;
-        margin-bottom: 3rem;
-        max-width: 80vh;
-    }
-    .Downloadcontainerbody {
-        height: 6rem !important;
-        width: 28rem;
-        align-items: baseline !important;
-        padding-left: 9rem;
-    }
+
+
 }
