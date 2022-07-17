@@ -86,8 +86,8 @@
 .foregroundVideo {
     position: relative;
 }
-  
-  .foregroundVideo::after {
+
+.foregroundVideo::after {
     background: rgba(0, 0, 0, 0.4);
     position: relative;
     height: 60vh;
@@ -100,7 +100,7 @@
     position: absolute;
     transform: skew(45deg);
     box-shadow: 0 25px 80px rgba(1, 0, 0, .5);
-  }
+}
 
 .headingwrap {
     height: 0;
@@ -242,10 +242,6 @@ h2 {
 
 .containertextwrap {
     padding-left: 35vh;
-    /*TODO:*/
-    position: absolute;
-    overflow: hidden;
-    object-fit: cover;
 }
 
 .containertext {
@@ -258,6 +254,35 @@ h2 {
     margin-bottom: 2.5rem;
     font-size: 2.9vw;
 
+}
+
+
+.Downloadcontainerbody {
+    height: 6rem !important;
+    width: 35rem;
+    align-items: baseline !important;
+    padding-left: 9rem;
+}
+
+.Downloadcontainertextwrap {
+    padding: 0 !important;
+}
+
+.Downloadcontainer01 {
+    padding-left: 27vw;
+    margin-bottom: 5rem;
+}
+
+.Downloadcontainertext {
+    font-size: 3rem !important;
+    color: white;
+    font-style: inherit;
+    user-select: none;
+    margin-left: 1rem;
+    margin-top: 1rem;
+    margin-bottom: 2.5rem;
+    font-size: 2.9vw;
+    align-self: center;
 }
 
 .backroundvideo2 {
@@ -346,7 +371,19 @@ h2 {
         opacity: 100%;
         align-items: center;
     }
+
     .foregroundVideo::after {
         margin-left: 50vw;
+    }
+    .Downloadcontainer01 {
+        padding-left: 0vw;
+        margin-bottom: 3rem;
+        max-width: 80vh;
+    }
+    .Downloadcontainerbody {
+        height: 6rem !important;
+        width: 28rem;
+        align-items: baseline !important;
+        padding-left: 9rem;
     }
 }
