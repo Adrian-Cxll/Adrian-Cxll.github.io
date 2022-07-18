@@ -201,15 +201,44 @@ h2 {
     overflow: hidden;
     z-index: 1;
 }
+.containerbody:hover {
+    background: linear-gradient(to top left, rgb(106, 10, 109), rgb(100, 23, 23)) !important;
+    transition-duration: 1000ms;
+    -webkit-transition: background-color 1000ms linear;
+    -moz-transition: background-color 1000ms linear;
+    -o-transition: background-color 1000ms linear;
+    -ms-transition: background-color 1000ms linear;
+    transition: background-color 1000ms linear;
+}
 
 .container01 .containerbody .containercontent {
     padding: 20xp, 20xp, 20xp, 0;
     transition: 0.5;
 }
 
+.containerbodydescription {
+    max-width: 15vw;
+    height: auto !important;
+    margin: 0 !important;
+    padding: 1rem !important;
+
+}
+
+.container01description {
+    max-width: 15vw;
+    max-height: 40vh !important;
+    margin: 0;
+    margin-right: 2vw;
+}
+
+.containertextwrapdescription {
+    padding: 0 !important;
+    position: relative !important;
+}
+
 .containercontent {
     width: 72vw !important;
-    z-index: 10;
+    z-index: 1;
     /* display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -261,6 +290,7 @@ h2 {
     width: 35rem;
     margin-left: 0 !important;
     align-items: center !important;
+    justify-content: center !important;
 }
 
 .Downloadcontainertextwrap {
@@ -271,8 +301,8 @@ h2 {
 }
 
 .Downloadcontainer01 {
-    text-align: center !important; 
-    margin-bottom: 5rem;
+    text-align: center !important;
+    margin-bottom: 10rem;
     display: flex;
     padding-left: calc(50vw - 17.5rem) !important;
 
@@ -289,18 +319,23 @@ h2 {
     margin-bottom: 0 !important;
 }
 
+.Downloadcontainertext:hover {
+    font-size: 3.2rem !important;
+    transition: 300ms;
+}
+
+.transition:hover {
+    font-size: 3.2rem !important;
+    transition: 300ms;
+}
+
 /* TODO: */
 
 .Downloadtext {
     margin: 0xp !important;
+    text-decoration-color: rgba(0,0,0,0.0) !important;
 }
-Downloadtext:link { text-decoration: none; }
 
-Downloadtext:visited { text-decoration: none; }
-
-Downloadtext:hover { text-decoration: none; }
-
-Downloadtext:active { text-decoration: none; }
 
 
 .backroundvideo2 {
@@ -316,9 +351,36 @@ Downloadtext:active { text-decoration: none; }
     z-index: 0;
 }
 
+.textdescription {
+    color: white;
+}
 
 
 
+.sect1 {
+    width: 100% !important;
+}
+
+.sect2 {
+    width: 100%;
+}
+
+.flex-container {
+
+    -ms-box-orient: horizontal;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -moz-flex;
+    display: -webkit-flex;
+    flex: 1 1 80px;
+    list-style: none;
+}
+
+.wrap {
+    -webkit-flex-wrap: wrap;
+    flex-wrap: wrap;
+}
 
 
 
@@ -389,5 +451,13 @@ Downloadtext:active { text-decoration: none; }
         margin-left: 50vw;
     }
 
+    .containerbodydescription {
+        height: 40vh !important;
+
+    }
+
+    .container01description {
+        visibility: hidden;
+    }
 
 }

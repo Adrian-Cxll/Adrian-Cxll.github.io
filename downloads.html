@@ -74,10 +74,10 @@
                         </video>
                     </div>
                     <div class="foregroundVideo"></div>
-                        <div class="heading">
-                            <h6 id="" class="headerDownloads" style="text-align: right;">VIRTUAL <br>MEANS<br>REAL</h6>
-                        </div>
-                    
+                    <div class="heading">
+                        <h6 id="" class="headerDownloads" style="text-align: right;">VIRTUAL <br>MEANS<br>REAL</h6>
+                    </div>
+
                 </div>
                 <div class="spacerlr"></div>
 
@@ -87,16 +87,22 @@
 
 
 
-                <div class="container01">
+                <div class="container01 transition">
                     <div class="containerbody">
                         <a href="Download01.html">
-                            <video style="z-index: 0;" class="backroundvideo2" autoplay loop muted>
+                            <video onmouseover="this.play()" onmouseout="this.pause();">
+                                <source src="/img/BackroundTextDownloads3.mp4" type="video/ogg">
+                                </source>This Browser does
+                                not
+                                like Videos...
+                            </video>
+                            <!-- <video style="z-index: 0;" class="backroundvideo2" autoplay loop muted>
                                 <source style="height: 80vh; width: 80vw;" src="/img/BackroundTextDownloads3.mp4"
                                     type="video/mp4">
                                 This Browser does
                                 not
                                 like Videos...
-                            </video>
+                            </video> -->
                             <div class="containercontent">
                                 <div class="containerpicture">
                                     <img class="containerpictureactual" style="z-index: 1;"
@@ -123,13 +129,12 @@
                 </div>
 
                 <!-- Template for each Download-->
-                <div class="container01">
+                <div class="container01 transition">
                     <div class="containerbody">
                         <a href="Template.html">
-                            <video style="z-index: 0;" class="backroundvideo2" autoplay loop muted>
-                                <source style="height: 80vh; width: 80vw;" src="/img/BackroundTextDownloads4.mp4"
-                                    type="video/mp4">
-                                This Browser does
+                            <video onmouseover="this.play()" onmouseout="this.pause();">
+                                <source src="/img/BackroundTextDownloads4.mp4" type="video/ogg">
+                                </source>This Browser does
                                 not
                                 like Videos...
                             </video>
@@ -154,13 +159,12 @@
                     </div>
                 </div>
 
-                <div class="container01">
+                <div class="container01 transition">
                     <div class="containerbody">
                         <a href="Template.html">
-                            <video style="z-index: 0;" class="backroundvideo2" autoplay loop muted>
-                                <source style="height: 80vh; width: 80vw;" src="/img/BackroundTextDownloads5.mp4"
-                                    type="video/mp4">
-                                This Browser does
+                            <video onmouseover="this.play()" onmouseout="this.pause();">
+                                <source src="/img/BackroundTextDownloads5.mp4" type="video/ogg">
+                                </source>This Browser does
                                 not
                                 like Videos...
                             </video>
@@ -288,7 +292,7 @@
     <script>
         AOS.init();
     </script>
-
+    <script>let video = document.getElementsByClassName('video');</script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script>
         $(document).ready(function () {
