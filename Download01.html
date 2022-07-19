@@ -87,7 +87,7 @@
 
 
                 <div class="Downloadcontainer01 container01">
-                    <a class="DownloadA" href="Template.html">
+                    <a class="DownloadA" href="https://drive.google.com/uc?export=download&id=1OR3pjGbd7fCuR6LDH05FerYVbCqxTWbz">
                         <div class="Downloadcontainerbody containerbody">
                             <div class="containercontent">
                                 <div class="Downloadcontainertextwrap containertextwrap">
@@ -143,15 +143,15 @@
                 </div>
 
 
-                <p style="visibility: hidden; width: 20vw;">Just some free space over here °-°</p>
+                <h6 style="visibility: hidden; width: 20vw;">Just some free space over here °-°<br><br><br><br><br><br>
+                </h6>
 
-<!-- 
-                 <div style="margin-left: 2vw; float: inline-start; min-width: 10vw;"
+
+                <div style="margin-left: 2vw; float: inline-start; min-width: 20vw; min-height: 40vh; border-radius: 25px !important;"
                     class="container01 container01description wrap flex-container">
-                    <div style="
-                    height: 30vh !important;" class="containerbody containerbodydescription">
-                        <div class="containercontent"></div>
-                        <div class="containertext" style="font-size:1.5vw !important;">
+                    <div class="containerbody containerbodydescription"
+                        style="height: 40vh !important; max-width: none !important; width: 40vw;">
+                        <div class="containertext" style="font-size:1.5vw !important; border-radius: 25px;">
                             <video onmouseover="this.play()" onmouseout="this.pause();">
                                 <source src="/img/ShowEffekt.mp4" type="video/ogg">
                                 </source>This Browser does
@@ -161,28 +161,53 @@
                         </div>
                     </div>
                 </div>
-            </div> -->
 
-            <p  class="textdescription wrap flex-container"
-                style="flex-wrap: wrap; display:flex; padding: 2rem; min-width: 70vw; margin-left: 6vw; font-size: 3vh;">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi, accusamus vel! Repellendus,
-                aperiam dolores porro repellat sapiente quidem eaque enim, commodi ratione, sed aut
-                consectetur
-                nesciunt tempore nulla repudiandae. Velit.
-            </p> 
+                <p class="textdescription wrap flex-container">
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ut reprehenderit non omnis perspiciatis in
+                    doloremque molestias assumenda deleniti vitae odit doloribus nobis porro aliquam molestiae minus
+                    earum
+                    ea natus, provident nihil cupiditate quaerat fugit tempore. Vero, laboriosam in, maiores assumenda
+                    ipsa
+                    facere dolores odio laborum expedita pariatur magni labore earum voluptatem architecto, mollitia
+                    nihil
+                    illo tempora facilis eos id. Reprehenderit aliquam pariatur quia assumenda atque quasi doloremque
+                    nemo?
+                    Veniam explicabo labore, quasi non sequi aut illum perspiciatis eligendi debitis, assumenda
+                    quibusdam
+                    quos. Deleniti iusto recusandae dolores porro dicta quidem deserunt eius obcaecati, ipsum eum fuga!
+                    Reiciendis suscipit voluptas modi enim!
+                </p>
+
+
+                <h6 style="visibility: hidden; width: 20vw;">Just some free space over here °-°<br><br><br><br><br><br>
+                </h6>
+
+                <div style="margin-left: 2vw; margin-right: 2vw; float: none; min-width: 100vw; min-height: 100vh; border-radius: 25px !important;"
+                    class="container01 container01description wrap flex-container">
+                    <div class="containerbody containerbodydescription"
+                        style="height: 70vh !important; max-width: none !important; width: 96vw;">
+                        <div class="containertext" style="font-size:1.5vw !important; border-radius: 25px;">
+                            <video onmouseover="this.play()">
+                                <source src="/img/Abstract Background - 107313.mp4" type="video/ogg">
+                                </source>This Browser does
+                                not
+                                like Videos...
+                            </video>
+                            
+                        </div>
+                    </div>
+                </div>
 
 
 
-
-
-        </div>
-        <footer class="footer">
-            <div id="footer">
-                <h3 id="footer_webtext">Adrian-Cxll.github.io</h3>
-                <div id="logo"></div>
             </div>
-        </footer>
-    </div>
+            <footer class="footer">
+                <div id="footer">
+                    <h3 id="footer_webtext">Adrian-Cxll.github.io</h3>
+                    <div id="logo"></div>
+                </div>
+            </footer>
+        </div>
     </div>
 
 
@@ -197,6 +222,13 @@
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script>
+        $('video').each(function () {
+            if ($(this).is(":in-viewport")) {
+                $(this)[0].play();
+            } else {
+                $(this)[0].pause();
+            }
+        })
         $(document).ready(function () {
             // Add smooth scrolling to all links
             $("a").on('click', function (event) {

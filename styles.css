@@ -108,7 +108,7 @@ body {
   padding-top: calc(1rem + 15vh);
   margin: 0;
   text-rendering: optimizeLegibility;
-  z-index: 10;
+  z-index: 0;
   line-height: 5rem;
 }
 
@@ -147,7 +147,7 @@ body {
   justify-content: center;
   align-items: center;
   max-width: 95vw;
-  z-index: 1;
+  z-index: 0;
   flex-wrap: wrap;
   margin-top: 15rem;
 }
@@ -327,7 +327,7 @@ video {
   height: 60vh !important;
   width: 100%;
   position: relative;
-  z-index: 1;
+  z-index: 0;
 }
 
 #Sect5_backround .Sect5_backroundvideo {

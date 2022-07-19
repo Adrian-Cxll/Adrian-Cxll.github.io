@@ -19,9 +19,11 @@
     opacity: 95% !important;
 }
 
+/* TODO: Scroll media Change option */
 .scroll-media {
     background: linear-gradient(to top left, rgb(28, 4, 29), rgb(0, 0, 0)) !important;
     background-color: black;
+    height: 300vh;
 }
 
 .videobackround {
@@ -139,7 +141,7 @@ overflow: hidden;
 }
 
 .spacerlr {
-    height: 10vh;
+    height: 1vh;
     visibility: hidden;
     /* height: 0;
     border-style: solid;
@@ -182,7 +184,7 @@ h2 {
     display: flex;
     align-items: center;
     max-width: 95vw;
-    z-index: 1;
+    z-index: 0;
     flex-wrap: wrap;
     margin-top: 8rem;
 }
@@ -201,6 +203,7 @@ h2 {
     overflow: hidden;
     z-index: 1;
 }
+
 .containerbody:hover {
     background: linear-gradient(to top left, rgb(106, 10, 109), rgb(100, 23, 23)) !important;
     transition-duration: 1000ms;
@@ -333,7 +336,7 @@ h2 {
 
 .Downloadtext {
     margin: 0xp !important;
-    text-decoration-color: rgba(0,0,0,0.0) !important;
+    text-decoration-color: rgba(0, 0, 0, 0.0) !important;
 }
 
 
@@ -353,6 +356,13 @@ h2 {
 
 .textdescription {
     color: white;
+    max-width: 70vw;
+    flex-wrap: wrap;
+    display: flex;
+    padding: 2rem;
+    min-width: 70vw;
+    margin-left: 6vw;
+    font-size: 3vh;
 }
 
 
@@ -459,5 +469,6 @@ h2 {
     .container01description {
         visibility: hidden;
     }
+    
 
 }
