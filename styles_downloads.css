@@ -322,6 +322,11 @@ h2 {
     margin-bottom: 0 !important;
 }
 
+.containercontentsmalltext {
+    visibility: hidden;
+    font-size: 0;
+}
+
 .Downloadcontainertext:hover {
     font-size: 3.2rem !important;
     transition: 300ms;
@@ -356,11 +361,11 @@ h2 {
 
 .textdescription {
     color: white;
-    max-width: 70vw;
+    max-width: 65vw;
     flex-wrap: wrap;
     display: flex;
     padding: 2rem;
-    min-width: 70vw;
+    min-width: 65vw;
     margin-left: 6vw;
     font-size: 3vh;
 }
@@ -443,9 +448,9 @@ h2 {
         font-size: 0.2xp;
     }
 
-    /* .containertextwrap {
+    .containertextwrap {
         visibility: hidden;
-    } */
+    }
 
     .containerpicture .containerpictureactual {
         display: block;
@@ -469,6 +474,39 @@ h2 {
     .container01description {
         visibility: hidden;
     }
-    
 
+    .container01video {
+        visibility: visible !important;
+    }
+
+    #title_about {
+        font-size: 3rem !important;
+    }
+
+    /* .containerpictureactual:hover ~ .containercontent {
+        width: 90vw !important;
+    } */
+    .containertextwrap {
+        padding-left: calc(72vw - 11rem);
+        padding-top: 10vh;
+    }
+
+    .containerpicture {
+        width: 60vw !important;
+        /* transition: 500ms !important; */
+
+    }
+
+    .containerpicture {
+        box-shadow: 0 0 80px rgba(1, 0, 0, .9);
+    }
+
+    .containercontentsmalltext {
+        visibility: visible;
+        font-size: 2.6rem !important;
+        color: white;
+        rotate: 90deg;
+        text-align: center;
+
+    }
 }

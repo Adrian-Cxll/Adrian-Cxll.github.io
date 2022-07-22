@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Cxll.bae | [Template]</title>
+    <!-- meta -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="Website of Adrian-Cxll.">
+    <meta name="keywords" content="Adrian, Adrian-Cxll, Cxll.bae, Portfolio, Website, progress">
+    <meta name="author" content="Adrian-Cxll">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="rgb(101, 34, 34)" media="(prefers-color-scheme: dark)">
+    <!-- links-->
+    <link rel="icon" href="img/Cxll_PP_R.ico">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles_downloads.css">
+    <link href='https://fonts.googleapis.com/css?family=Quicksand' rel='stylesheet'>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
+    <!-- script imp -->
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+    <script src="main.js"></script>
+</head>
+
+<body class="">
+
+    <header style="display: flex;
+    align-items: center;
+    flex-shrink: 0;
+    border-bottom: 1px solid var(--border-color);
+    padding: 0 30px;
+    white-space: nowrap;">
+        <div id="header">
+            <a href="/index.html">
+                <p id="HeaderText">Cxll.bae</p>
+            </a>
+        </div>
+    
+
+
+
+    <input type="checkbox" id="navcheck" role="button" title="menu">
+    <label for="navcheck" aria-hidden="true" title="menu">
+        <span class="burger">
+            <span class="bar">
+                <span class="visuallyhidden">Menu</span>
+            </span>
+        </span>
+    </label>
+    <nav id="menu">
+        <a href="/index.html">Home.</a>
+        <a href="#">¡Blog!</a>
+        <a href="/downloads.html">Downloads.</a>
+        <a href="#">Informations.</a>
+        <a href="#">Contact?</a>
+    </nav>
+</header>
+
+
+
+
+    
+
+
+
+
+
+    <!------- Scripts section ------->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            // Add smooth scrolling to all links
+            $("a").on('click', function (event) {
+                // Make sure this.hash has a value before overriding default behavior
+                if (this.hash !== "") {
+                    // Prevent default anchor click behavior
+                    event.preventDefault();
+
+                    // Store hash
+                    var hash = this.hash;
+
+                    // Using jQuery's animate() method to add smooth page scroll
+                    // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+                    $('html, body').animate({
+                        scrollTop: $(hash).offset().top
+                    }, 800, function () {
+
+                        // Add hash (#) to URL when done scrolling (default click behavior)
+                        window.location.hash = hash;
+                    });
+                } // End if
+            });
+        });
+    </script>
+    <!-- WHY CAN'T YOU WORK
+<script> 
+  $('#burger_toggle .menu_nav_link').click(function(){
+  $("#burger_toggle").collapse('hide');
+  }); 
+</script>
+-->
+</body>
+
+</html>
