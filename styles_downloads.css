@@ -321,6 +321,7 @@ h2 {
     user-select: none;
     font-size: 2.9vw;
     margin-bottom: 0 !important;
+    transition: 300ms;
 }
 
 .containercontentsmalltext {
@@ -528,12 +529,15 @@ h2 {
         margin-left: 6vw;
         font-size: 1vh !important;
     }
+
     .Download {
         max-height: 0 !important;
     }
+
     h6 {
         font-size: 0.5vh !important;
     }
+
     video {
         visibility: visible;
     }
