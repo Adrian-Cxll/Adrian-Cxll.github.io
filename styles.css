@@ -1002,7 +1002,7 @@ main .content {
   justify-content: flex-start; */
 }
 
-.containercontent:hover {
+.contentcontainer:hover {
   -webkit-box-shadow: inset 0px 5px 15px 5px rgba(0, 0, 0, 0.79);
   box-shadow: inset 0px 5px 15px 5px rgba(0, 0, 0, 0.79);
   transition: 500ms;
