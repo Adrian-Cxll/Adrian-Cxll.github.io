@@ -23,7 +23,7 @@
 .scroll-media {
     background: linear-gradient(to top left, rgb(28, 4, 29), rgb(0, 0, 0)) !important;
     background-color: black;
-    height: 400vh;
+    height: 300vh;
 }
 
 .videobackround {
@@ -226,6 +226,7 @@ h2 {
     padding: 1rem !important;
 
 }
+
 
 .container01description {
     max-width: 15vw;
@@ -473,6 +474,8 @@ h2 {
 
     .container01description {
         visibility: hidden;
+        margin-top: 4vh !important;
+
     }
 
     .container01video {
@@ -508,5 +511,40 @@ h2 {
         rotate: 90deg;
         text-align: center;
 
+    }
+
+    .containerbodydescriptionCredits {
+        height: 14vh !important;
+    }
+
+    .textdescription {
+        max-height: 10vh !important;
+        color: white;
+        max-width: auto !important;
+        flex-wrap: wrap;
+        display: flex;
+        padding: 2rem;
+        min-width: auto !important;
+        margin-left: 6vw;
+        font-size: 1vh !important;
+    }
+    .Download {
+        max-height: 0 !important;
+    }
+    h6 {
+        font-size: 0.5vh !important;
+    }
+    video {
+        visibility: visible;
+    }
+
+
+
+
+
+
+    /* TODO: Scroll media Change option */
+    .scroll-media {
+        height: 245vh;
     }
 }
