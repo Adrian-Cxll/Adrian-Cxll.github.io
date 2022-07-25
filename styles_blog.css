@@ -1,0 +1,30 @@
+.containermain {
+    width: 100vw;
+    height: 100vh;
+}
+
+.static {
+    position: static;
+}
+
+.blog {
+    max-width: 70vh;
+    height: auto;
+    padding: 1rem;
+    align-self: flex-start;
+
+}
+
+.mainpicture {
+    max-width: 70vw;
+    height: 70vh;
+    align-self: flex-start;
+}
+
+.mainmenu {
+    align-self: flex-end;
+}
+
+.credits {
+    align-self: flex-end;
+}
