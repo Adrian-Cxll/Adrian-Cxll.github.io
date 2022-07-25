@@ -5,9 +5,16 @@
     --maincolor: #fff;
     --mainfontsize: 1.8rem;
     --animationdauer: 2s;
+    --animationsdistanz: 54%;
 }
 
-
+@media (max-width:993px) {
+    :root {
+        --mainfontsize: 1rem;
+        --Browserbreite: 80vw;
+        --animationsdistanz: 66%;
+    }
+}
 
 
 
@@ -194,7 +201,7 @@ p {
     80%
      {
         height: auto;
-        width: 54%;
+        width: var(--animationsdistanz);
         border-right: 2px solid var(--maincolor);
     }
     100% {
