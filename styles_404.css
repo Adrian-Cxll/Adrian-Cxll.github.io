@@ -1,0 +1,202 @@
+:root {
+    --Browserhöhe: 35vh;
+    --Browserbreite: 35vw;
+    --Browser-bar-höhe: 3rem;
+    --maincolor: #fff;
+    --mainfontsize: 1.8rem;
+    --animationdauer: 2s;
+}
+
+
+
+
+
+body {
+    font-size: var(--mainfontsize) !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    background-image: url("img/BackroundLandscape.jpg");
+    color: var(--maincolor) !important;
+    font-family: "Lucida Console", Monaco, monospace !important;
+    line-height: 1.5 !important;
+    text-decoration: none !important;
+}
+
+.browser {
+    height: var(--Browserhöhe);
+    width: var(--Browserbreite);
+    background-color: #333;
+    margin-left: calc(50vw - var(--Browserbreite) / 2);
+    margin-top: calc(50vh - var(--Browserhöhe) / 2);
+    border-radius: 1rem;
+    overflow: hidden;
+    position: absolute;
+
+}
+
+
+/* ---- Bar ---- */
+
+
+.Browser-bar {
+    background: #f9f9f3;
+    height: var(--Browser-bar-höhe);
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 5px;
+    overflow: hidden;
+}
+
+.Browser-bar-dots {
+    float: left;
+    border-radius: 50%;
+    width: 15px;
+    height: 15px;
+    margin-right: 5px;
+}
+
+.red {
+    background: red;
+}
+
+.orange {
+    background: orange;
+}
+
+.green {
+    background: green;
+}
+
+/* ---- Content ---- */
+
+.content {
+    margin-top: var(--Browser-bar-höhe);
+    padding-top: 2rem;
+    padding-left: 2rem;
+}
+
+a {
+    color: var(--maincolor) !important;
+    text-decoration: none !important;
+    border-bottom: 2px solid var(--maincolor);
+    padding-bottom: 2px;
+    transition-delay: 50ms;
+    transition: 50ms;
+
+}
+
+a:hover {
+    padding-bottom: 1px;
+    transition: 50ms;
+}
+
+
+
+
+.c-overflow {
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.c11::before {
+    height: 0;
+    content: "Oops! It looks like you're lost."; 
+    position: absolute;
+    visibility: visible;
+    animation: animate var(--animationdauer) linear ;
+    overflow: hidden;
+    animation-fill-mode: forwards !important;
+    font-size: var(--mainfontsize);
+}
+
+.c22::before {
+    height: 0;
+    content: "Sorry about that."; 
+    position: absolute;
+    visibility: visible;
+    animation: animate var(--animationdauer) linear ;
+    animation-delay: var(--animationdauer);
+    overflow: hidden;
+    animation-fill-mode: forwards !important;
+    font-size: var(--mainfontsize);
+}
+
+.c33::before {
+    height: 0;
+    content: "Let me try and help."; 
+    position: absolute;
+    visibility: visible;
+    animation: animate var(--animationdauer) linear ;
+    animation-delay: calc(var(--animationdauer) * 3);
+    overflow: hidden;
+    animation-fill-mode: forwards !important;
+    font-size: var(--mainfontsize);
+}
+
+.c44::before {
+    height: 0;
+    content: "Go back home and start over."; 
+    position: absolute;
+    visibility: visible;
+    animation: animate var(--animationdauer) linear ;
+    animation-delay: calc(var(--animationdauer) *4);
+    overflow: hidden;
+    animation-fill-mode: forwards !important;
+    font-size: var(--mainfontsize);
+}
+
+
+.c1 {
+    transition: 1ms;
+    transition-delay: calc(var(--animationdauer) * 0.8);
+    font-size: var(--mainfontsize) !important;
+}
+.c2 {
+    transition: 1ms;
+    transition-delay: calc(var(--animationdauer) * 1.8);
+    font-size: var(--mainfontsize) !important;
+}
+.c3 {
+    transition: 1ms;
+    transition-delay: calc(var(--animationdauer) * 3.8);
+    font-size: var(--mainfontsize) !important;
+}
+.c4 {
+    transition: 1ms;
+    transition-delay: calc(var(--animationdauer) * 4.8);
+    font-size: var(--mainfontsize) !important;
+}
+
+/* Why does this all hurt so much.. */
+p { 
+    font-size: 0 !important;
+}
+
+
+
+
+
+
+
+
+
+@keyframes animate {
+
+    0% {
+        height: auto;
+        width: 0;
+        border-right: 2px solid var(--maincolor);
+    }
+
+    80%
+     {
+        height: auto;
+        width: 54%;
+        border-right: 2px solid var(--maincolor);
+    }
+    100% {
+    }
+}
