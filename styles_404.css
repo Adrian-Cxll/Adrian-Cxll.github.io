@@ -16,13 +16,22 @@
     }
 }
 
+@media (prefers-reduced-data: reduce) {
+    body {
+        background-image: url("img/BackroundLandscape.jpg");
+    }
+}
 
 
 body {
     font-size: var(--mainfontsize) !important;
     margin: 0 !important;
     padding: 0 !important;
-    background-image: url("img/BackroundLandscape.jpg");
+    background-image: url("img/404Backround01.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
     color: var(--maincolor) !important;
     font-family: "Lucida Console", Monaco, monospace !important;
     line-height: 1.5 !important;
@@ -110,10 +119,10 @@ a:hover {
 
 .c11::before {
     height: 0;
-    content: "Oops! It looks like you're lost."; 
+    content: "Oops! It looks like you're lost.";
     position: absolute;
     visibility: visible;
-    animation: animate var(--animationdauer) linear ;
+    animation: animate var(--animationdauer) linear;
     overflow: hidden;
     animation-fill-mode: forwards !important;
     font-size: var(--mainfontsize);
@@ -121,10 +130,10 @@ a:hover {
 
 .c22::before {
     height: 0;
-    content: "Sorry about that."; 
+    content: "Sorry about that.";
     position: absolute;
     visibility: visible;
-    animation: animate var(--animationdauer) linear ;
+    animation: animate var(--animationdauer) linear;
     animation-delay: var(--animationdauer);
     overflow: hidden;
     animation-fill-mode: forwards !important;
@@ -133,10 +142,10 @@ a:hover {
 
 .c33::before {
     height: 0;
-    content: "Let me try and help."; 
+    content: "Let me try and help.";
     position: absolute;
     visibility: visible;
-    animation: animate var(--animationdauer) linear ;
+    animation: animate var(--animationdauer) linear;
     animation-delay: calc(var(--animationdauer) * 3);
     overflow: hidden;
     animation-fill-mode: forwards !important;
@@ -145,10 +154,10 @@ a:hover {
 
 .c44::before {
     height: 0;
-    content: "Go back home and start over."; 
+    content: "Go back home and start over.";
     position: absolute;
     visibility: visible;
-    animation: animate var(--animationdauer) linear ;
+    animation: animate var(--animationdauer) linear;
     animation-delay: calc(var(--animationdauer) *4);
     overflow: hidden;
     animation-fill-mode: forwards !important;
@@ -161,16 +170,19 @@ a:hover {
     transition-delay: calc(var(--animationdauer) * 0.8);
     font-size: var(--mainfontsize) !important;
 }
+
 .c2 {
     transition: 1ms;
     transition-delay: calc(var(--animationdauer) * 1.8);
     font-size: var(--mainfontsize) !important;
 }
+
 .c3 {
     transition: 1ms;
     transition-delay: calc(var(--animationdauer) * 3.8);
     font-size: var(--mainfontsize) !important;
 }
+
 .c4 {
     transition: 1ms;
     transition-delay: calc(var(--animationdauer) * 4.8);
@@ -178,7 +190,7 @@ a:hover {
 }
 
 /* Why does this all hurt so much.. */
-p { 
+p {
     font-size: 0 !important;
 }
 
@@ -198,12 +210,11 @@ p {
         border-right: 2px solid var(--maincolor);
     }
 
-    80%
-     {
+    80% {
         height: auto;
         width: var(--animationsdistanz);
         border-right: 2px solid var(--maincolor);
     }
-    100% {
-    }
+
+    100% {}
 }

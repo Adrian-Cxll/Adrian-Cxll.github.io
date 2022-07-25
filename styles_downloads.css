@@ -475,7 +475,7 @@ h2 {
 
     .container01description {
         visibility: hidden;
-        margin-top: 4vh !important;
+        margin-top: 20vh !important;
 
     }
 
@@ -519,15 +519,17 @@ h2 {
     }
 
     .textdescription {
-        max-height: 10vh !important;
+        padding-top: 0vh !important;
         color: white;
         max-width: auto !important;
         flex-wrap: wrap;
         display: flex;
-        padding: 2rem;
         min-width: auto !important;
         margin-left: 6vw;
-        font-size: 1vh !important;
+        font-size: 2vh !important;
+    }
+    .textdescription2 {
+        padding-top: 21vh !important;
     }
 
     .Download {
