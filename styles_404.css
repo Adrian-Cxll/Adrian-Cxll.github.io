@@ -1,24 +1,23 @@
 :root {
     --Browserhöhe: 35vh;
     --Browserbreite: 35vw;
-    --Browser-bar-höhe: 3rem;
+    --Browser-bar-höhe: 2.6rem;
     --maincolor: #fff;
-    --mainfontsize: 1.8rem;
+    --mainfontsize: 1vw;
     --animationdauer: 2s;
-    --animationsdistanz: 54%;
+    --animationsdistanz: 33ch;
 }
 
 @media (max-width:993px) {
     :root {
         --mainfontsize: 1rem;
         --Browserbreite: 80vw;
-        --animationsdistanz: 66%;
     }
 }
 
 @media (prefers-reduced-data: reduce) {
     body {
-        background-image: url("img/BackroundLandscape.jpg");
+        background-image: url("img/BackroundLandscape.jpg") !important;
     }
 }
 
@@ -147,7 +146,7 @@ a:hover {
     position: absolute;
     visibility: visible;
     animation: animate var(--animationdauer) linear;
-    animation-delay: calc(var(--animationdauer) * 3);
+    animation-delay: calc(var(--animationdauer) * 2);
     overflow: hidden;
     animation-fill-mode: forwards !important;
     font-size: var(--mainfontsize);
@@ -159,7 +158,7 @@ a:hover {
     position: absolute;
     visibility: visible;
     animation: animate var(--animationdauer) linear;
-    animation-delay: calc(var(--animationdauer) *4);
+    animation-delay: calc(var(--animationdauer) * 3);
     overflow: hidden;
     animation-fill-mode: forwards !important;
     font-size: var(--mainfontsize);
@@ -180,13 +179,13 @@ a:hover {
 
 .c3 {
     transition: 1ms;
-    transition-delay: calc(var(--animationdauer) * 3.8);
+    transition-delay: calc(var(--animationdauer) * 2.8);
     font-size: var(--mainfontsize) !important;
 }
 
 .c4 {
     transition: 1ms;
-    transition-delay: calc(var(--animationdauer) * 4.8);
+    transition-delay: calc(var(--animationdauer) * 3.8);
     font-size: var(--mainfontsize) !important;
 }
 
