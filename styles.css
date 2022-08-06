@@ -339,6 +339,41 @@ video {
 }
 
 
+.text_Projects_2 {
+  color: #ecececd0;
+  max-width: 40vw;
+  margin-left: 5vw;
+  margin-top: 1vw;
+  font-size: 1.4vw;
+}
+
+.button_to_downloads {
+  margin-top: 3vh;
+  margin-left: 5vw;
+  background: darkviolet;
+  /*rgb(111, 30, 30)*/
+  height: 3vw;
+  width: 16vw;
+  border-radius: 9px;
+  box-shadow: 0 25px 80px rgba(1, 0, 0, .9);
+  transition: 0.6s;
+}
+
+.button_to_downloads:hover {
+  background: rgba(110, 2, 156, 0.9);
+}
+
+.text_to_downloads {
+  margin-left: 1vw;
+  padding-top: 1vh;
+  align-self: center;
+  color: #ecececd0;
+  font-size: 1.4vw;
+  transition: 0.6s;
+  /* -> transition button*/
+}
+
+
 /*----------  Selective Boxes  --------------*/
 
 #title_about {
@@ -817,6 +852,10 @@ main .content {
     margin: 0rem;
   }
 
+  #text_doing {
+    height: auto;
+  }
+
   #text_introduction {
     padding: 2rem;
     height: auto;
@@ -942,6 +981,39 @@ main .content {
     background: black;
     z-index: -1;
   }
+
+  .button_to_downloads {
+    margin-top: 3vh;
+    margin-left: 5vw;
+    background: darkviolet;
+    /*rgb(111, 30, 30)*/
+    height: 10vw;
+    width: 60vw;
+    border-radius: 8px;
+  }
+
+  .button_to_downloads:hover {
+    background: darkviolet;
+  }
+
+  .text_to_downloads {
+    margin-left: 7vw;
+    padding-top: vh;
+    align-self: center;
+    font-size: 4.6vw;
+  }
+
+  .text_Projects_2 {
+    font-size: 5vw;
+    max-width: 80vw;
+    margin-top: 4vh;
+    margin-bottom: 5vh;
+  }
+
+  #text_Projects {
+    font-size: 8vw !important;
+  }
+
 }
 
 
