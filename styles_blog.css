@@ -1,30 +1,314 @@
+/* @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css"); */
+
+:root {
+    --font-size-h1: 8vw;
+    --font-size-h2: 5rem;
+    --font-size-h3: 2rem;
+
+
+    --white: #f0f0f0;
+    --light-grey: #e4e4e4;
+    --black: #111111;
+    --dark-grey: #272727;
+    --bg: var(--white);
+    --txt: var(--black);
+    --dark-opacity: 0;
+    --light-opacity: 1;
+}
+
+
+/* border-bottom: 1px solid #1e2f45; */
+
+
+
+html {
+    overflow: scroll;
+    overflow-x: hidden;
+    scrollbar-width: none;
+    /* Firefox */
+    -ms-overflow-style: none;
+    /*  Explorer */
+}
+
+::-webkit-scrollbar {
+    width: 0;
+    /* Remove scrollbar space */
+    background: transparent;
+    /* Optional: just make scrollbar invisible */
+}
+
+/* Optional: show position indicator in red */
+::-webkit-scrollbar-thumb {
+    background: #FF0000;
+}
+
+
+#header {
+    opacity: 100%;
+    position: absolute;
+    background-color: rgb(255, 255, 255, 0);
+}
+
+#HeaderText {
+    position: absolute !important;
+}
+
+#headerText {
+    position: absolute !important;
+}
+
+/* ---- main ----*/
+
 .containermain {
     width: 100vw;
     height: 100vh;
+    /* background-color: cadetblue; */
+    z-index: -1;
 }
 
 .static {
-    position: static;
+    position: fixed;
+    right: 0 !important;
 }
 
+/* ---- 4 section ---- */
+
 .blog {
-    max-width: 70vh;
+    padding: 4vw !important;
+    padding-top: 0 !important;
+    width: 70% !important;
     height: auto;
     padding: 1rem;
+    float: left;
     align-self: flex-start;
 
 }
 
 .mainpicture {
-    max-width: 70vw;
+    width: 70vw;
     height: 70vh;
+    float: left;
     align-self: flex-start;
+    background-color: blueviolet;
 }
 
 .mainmenu {
+    height: 70vh;
+    width: 30vw;
+    padding: 3vw;
+    float: right;
     align-self: flex-end;
+    background-color: cadetblue;
 }
 
 .credits {
+    height: 30vh;
+    width: 30vw;
+    float: right;
     align-self: flex-end;
+    background-color: red;
+    bottom: 0;
+}
+
+
+/* mainpicture */
+
+
+
+
+
+/* Blog */
+
+h1 {
+    margin-left: 2vw !important;
+    font-size: var(--font-size-h1) !important;
+    margin-bottom: 5vh !important;
+}
+
+h2 {
+    font-size: var(--font-size-h2) !important;
+}
+
+h3 {
+    font-size: var(--font-size-h3) !important;
+}
+
+
+/* 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.blog {
+    background-color: var(--bg);
+    color: var(--txt);
+    transition: background 0.3s ease;
+}
+.checkbox {
+    display: none;
+}
+.label {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    background: var(--txt);
+    border-radius: 5rem;
+    padding: 0.5rem;
+    height: 2.5rem;
+    width: 5rem !important;
+    font-size: 1.5rem;
+    transition: background 0.5s ease;
+    cursor: pointer;
+    z-index: 1;
+}
+.label .ball {
+    position: absolute;
+    background-color: var(--bg);
+    border-radius: 50%;
+    top: 0.25rem;
+    left: 0.25rem;
+    height: 2rem;
+    width: 2rem;
+    transform: translateX(0);
+    transition: transform 0.3s ease, background-color 0.5s ease;
+}
+.fa-galactic-republic {
+    color: var(--black);
+}
+.fa-rebel {
+    color: var(--white);
+}
+.image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.image .fab {
+    position: absolute;
+    font-size: clamp(10rem, 80vw, 80vh);
+    transition: opacity 0.3s ease-in-out 0.5s;
+}
+.image .fa-galactic-republic {
+    color: var(--dark-grey);
+    opacity: var(--dark-opacity);
+}
+.image .fa-rebel {
+    color: var(--light-grey);
+    opacity: var(--light-opacity);
+}
+.checkbox:checked+.blog .label .ball {
+    transform: translateX(2.5rem);
+}
+.checkbox:checked+.blog {
+    --bg: var(--black);
+    --txt: var(--white);
+    --dark-opacity: 1;
+    --light-opacity: 0;
+} */
+
+
+
+
+
+
+
+/* mainmenu */
+
+a {
+    text-decoration: none;
+    color: #e4e4e4 !important;
+}
+
+
+h4 {
+    text-align: center;
+    font-size: 4.5rem !important;
+}
+
+h5 {
+    font-size: 2.5rem !important;
+    margin-bottom: 3vh !important;
+}
+
+.h5span {
+    font-size: 4rem !important;
+}
+
+
+
+.veroeffentlichung {
+    position: absolute;
+    bottom: 0 !important;
+    margin-bottom: 3vw;
+    font-size: var(--font-size-h3);
+}
+
+
+
+
+
+
+
+/* section credits */
+
+#footer_webtext {
+    position: absolute;
+    bottom: 2rem !important;
+    right: 1rem;
+    margin-bottom: 0 !important;
+}
+
+#logo {
+    position: absolute;
+    bottom: 1rem !important;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media(max-width:1353px) {
+    #footer_webtext {
+        visibility: hidden;
+        font-size: 0;
+    }
 }
