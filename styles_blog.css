@@ -1,9 +1,14 @@
 /* @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css"); */
 
+* {
+    color: var(--black);
+    user-select: none;
+}
+
 :root {
     --font-size-h1: 8vw;
     --font-size-h2: 5rem;
-    --font-size-h3: 2rem;
+    --font-size-h3: 3rem;
 
 
     --white: #f0f0f0;
@@ -18,6 +23,7 @@
 
 
 /* border-bottom: 1px solid #1e2f45; */
+
 
 
 
@@ -81,6 +87,7 @@ html {
     padding: 1rem;
     float: left;
     align-self: flex-start;
+    background-color: sssssssssssssss;
 
 }
 
@@ -89,7 +96,7 @@ html {
     height: 70vh;
     float: left;
     align-self: flex-start;
-    background-color: blueviolet;
+    background-color: var(--dark-grey);
 }
 
 .mainmenu {
@@ -102,11 +109,15 @@ html {
 }
 
 .credits {
+    background-image: url("/img/Blog-Credits.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
     height: 30vh;
     width: 30vw;
     float: right;
     align-self: flex-end;
-    background-color: red;
+    background-color: var(--light-grey);
     bottom: 0;
 }
 
@@ -131,7 +142,12 @@ h2 {
 
 h3 {
     font-size: var(--font-size-h3) !important;
+    line-height: 4rem !important;
+    word-spacing: 0.4rem;
+    user-select: text !important;
 }
+
+h5
 
 
 /* 
@@ -222,23 +238,25 @@ h3 {
 /* mainmenu */
 
 a {
-    text-decoration: none;
-    color: #e4e4e4 !important;
+    text-decoration: none !important;
+    color: #111111 !important;
 }
 
 
 h4 {
     text-align: center;
-    font-size: 4.5rem !important;
+    font-size: 4rem !important;
 }
 
 h5 {
     font-size: 2.5rem !important;
     margin-bottom: 3vh !important;
+    color: #111111 !important;
 }
 
 .h5span {
-    font-size: 4rem !important;
+    font-size: 3.5rem !important;
+    font-weight: 510;
 }
 
 
@@ -300,7 +318,9 @@ h5 {
 
 
 
-
+/* #footer_webtext {
+    color: white !important;
+} */
 
 
 

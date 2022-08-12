@@ -1,0 +1,131 @@
+:root {
+    --font-size-h1: 8vw;
+    --font-size-h2: 5rem;
+    --font-size-h3: 3rem;
+
+
+    --white: #f0f0f0;
+    --light-grey: #e4e4e4;
+    --black: #111111;
+    --dark-grey: #2727277c;
+    --transparent: #27272717;
+    --bg: var(--white);
+    --txt: var(--black);
+}
+
+html body {
+    background-color: #ecececd0 !important;
+}
+
+*{
+    user-select: none !important;
+}
+
+img {
+    height: auto;
+    width: auto;
+
+}
+
+a {
+    text-decoration: none !important;
+    color: var(--light-grey) !important;
+}
+
+.bloglist-heading {
+    text-align: center;
+}
+
+h1 {
+    margin-top: 6% !important;
+    font-family: 'Courier New', Courier, monospace;
+    color: var(--white) !important;
+    text-rendering: geometricPrecision;
+    font-size: 15rem !important;
+}
+
+h3 {
+    max-width: fit-content;
+    padding: 0.1vw;
+    padding-left: 1vw;
+    padding-right: 1vw;
+    background-color: var(--dark-grey);
+    -webkit-box-shadow: 0px 0px 15px 9px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 0px 15px 9px rgba(0, 0, 0, 0.49);
+}
+
+h4 {
+    position: absolute;
+}
+
+.button {
+    margin-top: 65%;
+    margin-left: 40%;
+    border-radius: 2rem;
+    background-color: var(--transparent);
+    height: 4rem;
+    max-width: 50%;
+    overflow: hidden;
+    text-align: center;
+    border: 3px solid white;
+}
+
+.bloglist-heading {
+    height: 60vh;
+    overflow: hidden;
+    object-fit: cover;
+    background-image: url(/img/Bloglist-header2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+}
+
+.containermain {
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-top: 2.5rem;
+    padding-bottom: 3.5rem;
+    margin-left: 15vw;
+    margin-right: 15vw;
+    height: auto;
+    width: auto;
+    display: flex;
+    flex-direction: wrap;
+    flex-wrap: wrap;
+    flex-basis: 80%
+}
+
+
+
+.container-basic {
+    border-radius: 2rem;
+    border: 4px solid var(--dark-grey);
+    margin: 2rem;
+    height: 20vw;
+    width: 20vw;
+    background-color: aqua;
+    overflow: hidden;
+    object-fit: cover;
+    background-image: url(/img/Blog-title-404.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    transition: 500ms;
+}
+
+.container1 {
+    background-image: url(/img/Bloglist-header2.jpg);
+}
+
+.container2 {
+    background-image: url(/img/Game5GamePicture.jpg);
+}
+
+.container3 {
+    background-image: url(/img/Blog-title-Surfacepro.jpg);
+}
+
+
+.container-basic:hover {
+    background-position: 43% !important;
+}

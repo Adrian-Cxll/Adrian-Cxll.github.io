@@ -872,33 +872,8 @@ main .content {
     margin-top: 15rem;
   }
 
-  /*  Set the Div in in the middle of vw, 1-3rem margin l-r, 2-5rem margin b;
-  #container #card {
-    position: relative;
-    margin-left: calc(1rem + 65vw);
-    box-shadow: 0 25px 80px rgba(1, 0, 0, .9);
-    border-radius: 15px;
-    background: rgba(0, 0, 0, 0.5);
-    overflow: hidden;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    backdrop-filter: blur(5px);
-  }
-  
-  #container #card #content {
-    padding: 20px;
-    transition: 0.5;
-  }
-  .cd-scroll-down-to-5 {
-    padding-top: 1.9rem;
-    right: calc(1rem + 5vw);
-    bottom: calc(2rem + 6.3vw);
-    width: calc(1rem + 1vw);
-    height: calc(1rem + 1vw);
-    
-  }*/
 
+  
   .burger_menu {
     left: calc(100vw - 8rem);
   }
