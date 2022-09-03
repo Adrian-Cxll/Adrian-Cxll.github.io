@@ -1,0 +1,121 @@
+:root {
+    --Browserhöhe: 35vh;
+    --Browserbreite: 35vw;
+    --Browser-bar-höhe: 2.6rem;
+    --maincolor: #fff;
+    --animationdauer: 6s;
+}
+
+@media (max-width:993px) {
+    :root {
+        --mainfontsize: 1rem;
+        --Browserbreite: 80vw;
+    }
+}
+
+body {
+    line-height: unset !important;
+}
+
+
+.browser {
+visibility: hidden;
+    z-index: 10000000000;
+    position: fixed;
+    pointer-events: none;
+    animation: animate var(--animationdauer) linear;
+    /* animation-delay: calc(var(--animationdauer)); */
+    overflow: hidden;
+    animation-fill-mode: forwards !important;
+
+
+    height: var(--Browserhöhe);
+    width: var(--Browserbreite);
+    background-color: #333;
+    margin-left: calc(50vw - var(--Browserbreite) / 2);
+    margin-top: calc(50vh - var(--Browserhöhe) / 2);
+    border-radius: 1rem;
+    overflow: hidden;
+    -webkit-box-shadow: 0px 0px 21px 4px rgba(0, 0, 0, 0.63);
+    box-shadow: 0px 0px 21px 4px rgba(0, 0, 0, 0.63);
+}
+
+
+/* ---- Bar ---- */
+
+
+.Browser-bar {
+    background: #f9f9f3;
+    height: var(--Browser-bar-höhe);
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 5px;
+    overflow: hidden;
+}
+
+.Browser-bar-dots {
+    float: left;
+    border-radius: 50%;
+    width: 15px;
+    height: 15px;
+    margin-right: 5px;
+}
+
+.red {
+    background: red;
+}
+
+.orange {
+    background: orange;
+}
+
+.green {
+    background: green;
+}
+
+/* ---- Content ---- */
+
+.content {
+    margin-top: var(--Browser-bar-höhe);
+    padding: 2rem;
+}
+
+
+
+@keyframes animate {
+
+    0% {
+        visibility: visible;
+        height: var(--Browserhöhe);
+        max-height: 500px;
+        opacity: 1 !important;
+
+    }
+
+    86% {
+        max-height: var(--Browserhöhe);
+    }
+    96% {
+        max-height: var(--Browser-bar-höhe);
+        max-width: var(--Browserbreite);
+        opacity: 1;
+    }
+
+    97% {
+        max-height: var(--Browser-bar-höhe);
+        max-width: 2vw;
+        opacity: 1;
+    }
+
+    98% {
+        opacity: 0;
+    }
+    99% {
+        opacity: 0;
+        visibility: hidden;
+    }
+    100% {}
+}

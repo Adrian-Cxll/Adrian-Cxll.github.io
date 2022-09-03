@@ -682,7 +682,7 @@ nav::before {
   z-index: -1;
   width: 25em;
   /*background: linear-gradient(to bottom right, blue, #d62956);*/
-  background-color: #d62956;
+  background-color: rgb(141, 27, 27);
   content: "";
   transform: skewX(15deg) translateX(-100%);
   transform-origin: bottom left;

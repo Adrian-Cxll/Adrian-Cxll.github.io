@@ -88,21 +88,53 @@ h4 {
     margin-left: 15vw;
     margin-right: 15vw;
     height: auto;
-    width: auto;
+    width: calc(45rem * 3);
     display: flex;
     flex-direction: wrap;
     flex-wrap: wrap;
     flex-basis: 80%
 }
 
+@media (max-width:1700px) {
+    .containermain {
+        width: calc(45rem * 2);
+
+    }
+}
+@media (max-width:1200px) {
+    .containermain {
+        width: calc(45rem * 1);
+
+    }
+}
+
+@media (max-width:500px) {
+    .containermain {
+        width: 50vw;
+        padding: 0 !important;
+        margin: 0 !important;
+    }
+
+    .container1, .container2, .container3, .container4, .containermain{
+        width: 90vw !important;
+    }
+
+    .button {
+        visibility: hidden;
+    }
+
+    .container-basic:hover {
+        transform: scale(1) !important;
+    }
+}
 
 
 .container-basic {
     border-radius: 2rem;
     border: 4px solid var(--dark-grey);
     margin: 2rem;
-    height: 20vw;
-    width: 20vw;
+    height: 40rem;
+    width: 40rem;
     background-color: aqua;
     overflow: hidden;
     object-fit: cover;
@@ -127,5 +159,10 @@ h4 {
 
 
 .container-basic:hover {
-    background-position: 43% !important;
+    /* background-position: 43% !important; */
+    transform: scale(1.1);
 }
+
+
+
+
