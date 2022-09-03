@@ -1,3 +1,12 @@
 nav::before {
     background: linear-gradient(to top left, rgb(73, 191, 255), rgb(0, 0, 0)) !important;
 }
+
+a {
+    text-decoration: none !important;
+    color: white !important;
+}
+
+#veroeffentlichung {
+    border-bottom: 2px solid wheat !important;  
+}
