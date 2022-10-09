@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Gemunu+Libre:wght@400&display=swap');
+
+:root {
+    --circlewidth-out: 12rem;
+    --circlewidth-in: 5rem;
+    --font-size: 4rem;
+
+}
+
+body {
+
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    height: 100vh;
+}
+
+h6 {
+    font-family: 'Gemunu Libre', sans-serif;
+    margin-top: 1.5rem;
+    font-size: 1.3rem;
+}
+
+
+#backround {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -2;
+  }
+
+
+
+
+div.circle {
+    padding: 0.5rem;
+    align-self: center;
+    display: inline-block;
+    border-radius: 50%;
+    width: var(--circlewidth-in);
+    height: var(--circlewidth-in);
+    background-color: #83497ee1;
+    /* padding-top: calc(0.5 * (var(--circlewidth-out) - var(--font-size))); */
+    border: 2px solid rgb(65, 22, 83);
+    outline: 2px solid darkviolet;
+    outline-offset: 3px;
+    transition: 0.5s;
+    text-align: center;
+    overflow: hidden;
+    margin: 2rem;
+    /* margin-top: 5rem; */
+}
+
+div.circle:hover {
+    /* padding-top: calc(0.5 * (var(--circlewidth-out) - var(--font-size))); */
+    width: var(--circlewidth-out) !important;
+    height: var(--circlewidth-out) !important;
+    outline: 5px solid darkviolet;
+    outline-offset: 5px;
+    transition: 0.5s ease-in-out;
+padding-top: 1rem;
+
+}
+
+div.c1 {
+    margin-bottom: 8rem !important;
+}
+div.c2 {
+    margin-bottom: 1rem !important;
+}
+div.c3 {
+    margin-bottom: -1rem !important;
+}
+div.c4 {
+    margin-bottom: 5rem !important;
+    margin-left: -1rem;
+}
+div.c5 {
+    margin-bottom: -1rem;
+    margin-left: -1.3rem;
+}
+div.c7 {
+    margin-left: -0.6rem;
+    margin-bottom: 3rem !important;
+}
+div.c8 {
+    margin-bottom: 1rem !important;
+}
+div.c9 {
+    margin-left: -1.4rem;
+    margin-bottom: -5rem !important;
+}
+div.c10 {
+    margin-left: -2rem;
+    margin-bottom: 3rem;
+}
+
+
+
+div.b1 {
+    margin-bottom: -2rem !important;
+    margin-right: -1rem !important;
+}
+div.b2 {
+    margin-bottom: -1rem !important;
+}
+
+div.circle.main {
+    width: 10rem;
+    height: 10rem;
+}
+
+p.main.circlemain {
+    margin-top: 40% !important;
+}
+p.main {
+    margin-top: 20%;
+    /* margin-bottom: auto !important; */
+}
+
+div.wrapperr {
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.wrapperr.top {
+    margin-top: 20vh !important;
+}
+
+
+
