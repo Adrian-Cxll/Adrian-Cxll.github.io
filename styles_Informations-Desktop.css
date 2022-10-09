@@ -1,0 +1,133 @@
+:root {
+    --content-height: 100vh;
+  }
+  
+
+body {
+    background-color: black !important;
+}
+
+span.iwrapper {
+    font-size: 3rem !important;
+}
+
+
+.title {
+    position: relative;
+    left: -80vw !important;
+    align-self: flex-start;
+    font-weight: 500;
+    line-height: 1.1;
+    padding-left: 6vh;
+    font-size: 14rem !important;
+    font-family: 'Quicksand' !important;
+    color: aliceblue !important;
+    text-rendering: optimizeLegibility;
+    z-index: 1;
+    margin-top: 10rem;
+    border-bottom: 5px solid;
+    padding-bottom: 3px;
+}
+
+.wrapper {
+    animation: animate 0.6s linear;
+    /* start animation*/
+    transition: 0.6s;
+    /* end animation time -> js linkmotion5*/
+    position: relative;
+    width: 100vw;
+    height: 40vh;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    left: 80vw;
+    box-shadow: none;
+}
+
+.right {
+    align-self: flex-end;
+    right: 0;
+}
+
+.Section-1 {
+    background-color: #ececec9f;
+    height: 0;
+    animation: animate3 10000000s linear;
+    z-index: -10 !important;
+    overflow: hidden !important;
+    transition: 1s;
+}
+
+.section-1-inside-p {
+    color: white !important;
+    user-select: text;
+}
+
+.zoom.main {
+    transform: scale(1.02) !important;
+}
+.zoom.main:hover {
+    transform: scale(1.02) !important;
+}
+
+@keyframes animate {
+
+    0% {
+        visibility: visible;
+        left: -1vw;
+    }
+
+    50% {
+        left: 0vw;
+    }
+
+    60% {
+        left: 10vw;
+    }
+
+    86% {
+        left: 36vw;
+    }
+
+    90% {
+        left: 38vw;
+    }
+
+    99% {
+        left: 80vw;
+    }
+
+    100% {}
+}
+
+@keyframes animate2 {
+
+    0.0000000000000000001% {
+        height: var(--content-height) !important;
+    }
+
+    0.00000001% {
+        height: calc(var(--content-height) * 0.957);
+    }
+
+    100% {
+        height: 0vh !important;
+        visibility: hidden;
+    }
+}
+
+@keyframes animate3 {
+
+    0% {
+        z-index: 1;
+        visibility: visible;
+        height: 0;
+    }
+
+    0.00001% {
+        visibility: visible;
+        height: var(--content-height);
+    }
+
+    100% {}
+}

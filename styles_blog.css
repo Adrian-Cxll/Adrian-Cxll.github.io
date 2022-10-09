@@ -203,7 +203,13 @@ h5 {
     bottom: 2rem !important;
     right: 1rem;
     margin-bottom: 0 !important;
+    /* only for picture */
+    /* color: white !important; */
 }
+
+/* .credits {
+    background-image: url(/img/Z-examples1.jpg);
+} */
 
 #logo {
     position: absolute;

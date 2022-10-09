@@ -4,6 +4,7 @@
 <head>
     <title>Cxll | All blogs</title>
     <!-- meta -->
+    <meta http-equiv="refresh" content="10000000">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="description" content="Website of Adrian-Cxll.">
@@ -15,7 +16,7 @@
     <link rel="icon" href="img/Cxll_PP_R.ico">
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="styles_informations.css">
-    <!-- <link rel="stylesheet" href="styles_downloads.css"> -->
+    <link rel="stylesheet" href="styles_Informations-Desktop.css">
     <link rel="import" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css">
 
     <link href='https://fonts.googleapis.com/css?family=Quicksand' rel='stylesheet'>
@@ -54,7 +55,6 @@
 
 
     <div class="main-window">
-        <div class="spacer" id="spacer"></div>
 
 
         <a href="#a0" onclick="linkmotion0()" class="a-hover">
@@ -83,25 +83,48 @@
         </a>
 
 
-        <a href="#a2" onclick="linkmotion2()" class="a-hover">
-            <div class="section sect3 a-hover">
-                <img class="zoom" id="a2" src="img/Informations-Section1.jpg" alt="backround picture of this Section">
+        <!-- MAIN  -->
+
+        <div class="section sect3 a-hover">
+            <img class="zoom main" id="a3" src="img/Informations-Section1.jpg" alt="backround picture of this Section">
+            <div class="wrapper">
+                <h3 class="title">
+                    <a href="#a3" onclick="linkmotion5()" class="a-back">
+                        <span class="iwrapper">
+                            <i class="fa fa-long-arrow-left fa-2x" aria-hidden="true"></i>
+                        </span>
+                    </a>&nbsp&nbspDesktop
+                </h3>
                 <div class="blur right">
                     <div class="blur-text">
                         <h6>Desktop</h6>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores, ex!</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident, ipsum?</p>
                     </div>
                 </div>
             </div>
-        </a>
+        </div>
+
+
+
+
+        <div class="Section-1">
+            <p class="section-1-inside-p">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellendus,
+                deleniti illo a perspiciatis eligendi, soluta et praesentium temporibus, aut molestiae autem tempore ea
+                mollitia dolore quam neque possimus veniam officia aspernatur reiciendis quibusdam? Consequatur
+                explicabo eius ullam suscipit dolorem laudantium nulla cupiditate nesciunt architecto facere harum eum
+                quidem officia inventore adipisci sit incidunt rem aliquam tempore, in placeat aspernatur iste
+                molestiae! Necessitatibus aliquam consectetur eos iure deleniti porro reprehenderit modi quas quod
+                veritatis dolores dolorum, libero quidem aliquid maxime inventore. Ducimus hic earum id, minus autem
+                veritatis similique in, doloribus deleniti ea voluptatibus soluta iusto mollitia inventore quidem
+                temporibus assumenda!</p>
+            <div style="height: 70vh;" class="spacer" id="spacer"></div>
+        </div>
+        <!-- END MAIN -->
 
 
 
 
 
-
-
-        <!-- test / repeat -->
 
         <a href="#a1" onclick="linkmotion1()" class="a-hover">
             <div class="section sect3 a-hover">
@@ -115,41 +138,41 @@
                 </div>
             </div>
         </a>
-        <a href="#a3" onclick="linkmotion()" class="a-hover">
+
+        <a href="#a3" onclick="myFunction()" class="a-hover">
             <div class="section sect3 a-hover">
                 <img class="zoom" id="a3" src="img/Informations-Section1.jpg" alt="backround picture of this Section">
                 <div class="blur right">
                     <div class="blur-text">
                         <h6>Desktop</h6>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio, asperiores?</p>
+                        <p>Interested in my setup? Check it out here!</p>
                     </div>
                 </div>
             </div>
         </a>
-        <div style="height: 500vh;" class="spacer" id="spacer"></div>
+
+
+
 
     </div>
 
+
+
+
+
     <!------- Scripts section ------->
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script>
-        AOS.init();
-        function linkmotion0() {
+        function linkmotion5() {
             setTimeout(function () {
-                window.location.href = "404.html";
+                window.location.href = "Informations.html#a2";
             }, 920);
+            document.getElementsByClassName("wrapper")[0].style.left = "-1vw";
+            document.getElementsByClassName("Section-1")[0].style.animation = "animate3 0s";
+            document.getElementsByClassName("Section-1")[0].style.animation = "animate2 0.6s linear";
         }
-        function linkmotion1() {
-            setTimeout(function () {
-                window.location.href = "404.html";
-            }, 920);
-        }
-        function linkmotion2() {
-            setTimeout(function () {
-                window.location.href = "informations-Desktop.html#a3";
-            }, 920);
-        }
+
         $(document).ready(function () {
             // Add smooth scrolling to all links
             $("a").on('click', function (event) {
@@ -174,6 +197,13 @@
             });
         });
     </script>
+    <!-- WHY CAN'T YOU WORK
+<script> 
+  $('#burger_toggle .menu_nav_link').click(function(){
+  $("#burger_toggle").collapse('hide');
+  }); 
+</script>
+-->
 </body>
 
 </html>

@@ -22,7 +22,7 @@
 
 
 .browser {
-visibility: hidden;
+    visibility: hidden;
     z-index: 10000000000;
     position: fixed;
     pointer-events: none;
@@ -101,6 +101,7 @@ visibility: hidden;
     86% {
         max-height: var(--Browserhöhe);
     }
+
     96% {
         max-height: var(--Browser-bar-höhe);
         max-width: var(--Browserbreite);
@@ -116,9 +117,11 @@ visibility: hidden;
     98% {
         opacity: 0;
     }
+
     99% {
         opacity: 0;
         visibility: hidden;
     }
+
     100% {}
 }
