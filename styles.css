@@ -489,7 +489,7 @@ video {
   margin-top: 0;
   margin-bottom: 5rem;
   padding-top: 1rem;
-  float: inline-end;
+  float: right;
   text-align: right;
   color: rgb(23, 15, 15);
   font-family: 'Quicksand';
@@ -606,7 +606,8 @@ label::before {
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: rgba(10, 38, 57, 0.75);
+  /* background-color: rgba(10, 38, 57, 0.75); */
+  background-color: rgba(78, 43, 63, 0.3);
   content: "";
   opacity: 0;
   pointer-events: none;
