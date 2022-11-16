@@ -53,6 +53,16 @@ div>img {
     line-height: normal !important;
 }
 
+#reset {
+    margin-top: 20px;
+    background-color: #008cba;
+    cursor: pointer;
+    font-size: 18px;
+    padding: 8px 20px;
+    color: white;
+    border: 0;
+  }
+
 .Visits {
     font-size: 2rem !important;
 }

@@ -65,7 +65,7 @@ if (visitCount) {
   visitCount = 1;
   localStorage.setItem("page_view", 1);
 }
-counterContainer.innerHTML = <i class="fa fa-circle" aria-hidden="true"></i> + visitCount + <span class="Visits"><br></br>Visits</span>;
+counterContainer.innerHTML = visitCount;
 
 // Adding onClick event listener
 resetButton.addEventListener("click", () => {
@@ -76,3 +76,5 @@ resetButton.addEventListener("click", () => {
 
 
 
+
+counterContainer.innerHTML = <i class="fa fa-circle" aria-hidden="true"></i> + visitCount + <span class="Visits"><br></br>Visits</span>;
