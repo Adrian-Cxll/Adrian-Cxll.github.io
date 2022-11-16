@@ -1,0 +1,34 @@
+body {
+    background-color: #ecececd0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+.main-window {
+    
+    width: 80vw;
+    margin: auto;
+    margin-bottom: 8vh;
+    padding-top: 15vh;
+}
+
+h5 {
+    color: black !important;
+    margin: 5rem !important;
+    text-align: center;
+    font-family: inherit !important;
+    font-size: 8rem !important;
+    font-weight: 700 !important;
+    background-image: linear-gradient(90deg, #e67399, #f2a640);
+    background-position: bottom;
+    background-size: 75rem 30%;
+    background-repeat: no-repeat;
+}
+
+p.main-text {
+    color: black !important;
+    margin: 10rem !important;
+    text-align: center;
+    font-family: inherit !important;
+    font-size: 2.7rem !important;
+}
