@@ -139,7 +139,7 @@
         visitCount = 1;
         localStorage.setItem("page_view", 1);
     }
-    counterContainer.innerHTML = ('<i class="fa fa-circle" aria-hidden="true"></i>') + visitCount + ('<span class="Visits"><br></br>Visits</span>');
+    counterContainer.innerHTML = ('<i class="fa fa-circle" aria-hidden="true"></i>') + visitCount + ('<span class="Visits"><br></br>Your Visits</span>');
 
     // page_view value safety
     if (localStorage.getItem("page_view", 1) >= 999999) {
