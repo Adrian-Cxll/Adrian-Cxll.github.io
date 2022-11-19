@@ -71,6 +71,7 @@ div>img {
     text-align: right !important;
     bottom: 0;
     font-size: 2rem !important;
+    width: fit-content;
 }
 
 .mobile>.wrap {
