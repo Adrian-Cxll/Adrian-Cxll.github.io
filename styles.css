@@ -205,9 +205,7 @@ body {
   margin-left: 0rem;
   background-color: azure;
   padding: 5rem;
-  color: #444;
   text-align: center;
-  font-family: 'Times New Roman', Times, serif;
   text-rendering: optimizeLegibility;
   box-shadow: 0 4px 16px 0 rgba(0, 0, 0, 0.25);
   height: 360px;
@@ -218,10 +216,8 @@ body {
   margin-left: 30rem;
   background-color: azure;
   padding: 5rem;
-  color: #444;
   font-size: 3rem;
   text-align: center;
-  font-family: 'Times New Roman', Times, serif;
   text-rendering: optimizeLegibility;
   box-shadow: 0 4px 16px 0 rgba(0, 0, 0, 0.25);
   height: 360px;
@@ -338,6 +334,24 @@ video {
   z-index: -1 !important;
 }
 
+.right {
+  float: right;
+  width: 60vw;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(to right,  rgba(169, 0, 0, 0), rgb(0, 0, 0) 15%);
+}
+.right > .imgsect5 {
+  margin-left: 15rem !important;
+  width: 40vw;
+  height: 50%;
+  background-image: url("img/JS-Code-example2.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
 
 .text_Projects_2 {
   color: #ecececd0;
@@ -680,6 +694,7 @@ nav {
     width: 50vw;
     z-index: 1;
   }
+
   label .burger {
     top: 2rem !important;
   }

@@ -53,9 +53,22 @@
         font-size: 8rem !important;
     }
 }
-
+.box > img {
+    height: 23rem;
+}
 .box > span {
     font-size: 2rem !important;
+}
+
+
+a .box {
+    background: linear-gradient(33deg, #C1E3FF, #ABC7FF);
+    /* standart Backround */
+    margin: 1rem;
+    border-radius: 15px;
+    height: auto;
+    position: relative;
+    overflow: hidden;
 }
 
 .searchbar {

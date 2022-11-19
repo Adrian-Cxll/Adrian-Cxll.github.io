@@ -7,15 +7,19 @@
 
 
 .spacer {
-    height: 15rem;
+    height: 20rem;
     display: block;
 }
 
 div.slider {
-    width: 65vw;
+    width: 70vw;
     height: 45rem;
     margin: auto;
-    background-color: blueviolet;
+
+    background-image: url(https://shots.codepen.io/Cxll-bae/pen/QWxGXmK-512.webp?version=1667926927);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
 }
 
 div>img {
@@ -92,13 +96,15 @@ div>img {
     text-rendering: auto;
     box-sizing: border-box;
     margin-right: 0.9rem !important;
-
-
-
 }
 
 div.desktop {
+    height: 70vh;
     visibility: visible;
+    background-image: url("img/backround-projects.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
 }
 
 div.mobile {
@@ -207,8 +213,20 @@ a.box-link:hover span {
     }
 }
 
+.box-1 {
+    background-image: url("img/website-example-img.jpg");
+}
+
+.box-2 {
+    background-image:url("img/JS-Code-example.png");
+}
+
 .box-3 {
-    background-image: url(img/Unity_screenshot.png);
+    background-image: url("img/Unity_screenshot.png");
+}
+
+.box-4 {
+    background-image: url("img/programme-Code-example.png");
 }
 
 .scroll1 {

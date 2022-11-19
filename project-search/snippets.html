@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <title>Cxll.bae | [Template]</title>
+    <title>Cxll.bae | Snippets</title>
     <!-- meta -->
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -49,7 +49,7 @@
         <a href="../404.html">Contact?</a>
     </nav>
 
-    
+
     <div class="heading-img" style="background-image: url(../img/Projects-Search-Title-snippets.jpg)"></div>
     <div class="heading">
         <h1>Snippets</h1>
@@ -62,61 +62,77 @@
         </div>
         <div class="spacer"></div>
         <div class="grid">
-            <div class="box">
-                <img class="img-zoom"
-                    src="https://images.unsplash.com/photo-1648737155328-0c0012cf2f20?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80"
+            <div class="box" onclick="link1()">
+                <img class="img-zoom" src="https://shots.codepen.io/Cxll-bae/pen/QWxGXmK-512.jpg?version=1667926927"
                     alt="">
-                <span style="position: absolute;">Why you should get yourself an convertible</span>
+                <span style="position: absolute;">Basic Grid layout</span>
             </div>
-            <div class="box">
-                <img class="img-zoom"
-                    src="https://images.unsplash.com/photo-1494587351196-bbf5f29cff42?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2071&q=80"
+            <div class="box" onclick="link2()">
+                <img class="img-zoom" src="https://shots.codepen.io/Cxll-bae/pen/oNyoKqZ-512.jpg?version=1668862283"
                     alt="">
-                <span style="position: absolute;">Roadtrip 2k10</span>
+                <span style="position: absolute;">JS searchbar</span>
             </div>
-            <div class="box">
+            <!-- <div class="box" onclick="link3()">
                 <img class="img-zoom"
                     src="https://images.unsplash.com/photo-1555664424-778a1e5e1b48?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80"
                     alt="">
                 <span style="position: absolute;">[Guide] How to get started with Arduino</span>
 
             </div>
-            <div class="box">
+            <div class="box" onclick="link4()">
                 <img class="img-zoom"
                     src="https://images.unsplash.com/photo-1602932365975-18086e1491b4?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1472&q=80"
                     alt="">
                 <span style="position: absolute;">The hidden entry to ...</span>
             </div>
-            <div class="box">
+            <div class="box" onclick="link5()">
                 <img class="img-zoom"
                     src="https://images.unsplash.com/photo-1664575600850-c4b712e6e2bf?ixlib=rb-4.0.3&ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80"
                     alt="">
                 <span style="position: absolute;">First impressions on the new ...</span>
 
-            </div>
+            </div> -->
         </div>
     </div>
 </body>
 
 
 <script>
+
+    function link1() {
+        window.location.href = "../projects/Basics-of-the-GRID.html";
+    }
+    function link2() {
+        window.location.href = "../projects/Basic-Search.html";
+    }
+    function link3() {
+        window.location.href = "../404.html";
+    }
+    function link4() {
+        window.location.href = "../404.html";
+    }
+    function link5() {
+        window.location.href = "../404.html";
+    }
+
+
     document.getElementById("search").addEventListener("keyup", function (evt) {
 
-// const searchString = evt.target.value.toLowerCase();
-const searchString = evt.target.value;
-// console.log(searchString);
-[].forEach.call(document.querySelectorAll(".grid .box"), function (subject) {
+        // const searchString = evt.target.value.toLowerCase();
+        const searchString = evt.target.value;
+        // console.log(searchString);
+        [].forEach.call(document.querySelectorAll(".grid .box"), function (subject) {
 
-    const searchobj = subject.textContent.indexOf(searchString);
-    // const searchobj = subject.textContent.indexOf(searchString.toLowerCase());
-    console.log(searchobj);
-    if (searchobj === -1) {
-        subject.classList.add("hide");
-    } else {
-        subject.classList.remove("hide");
-    }
-});
-}, false);
+            const searchobj = subject.textContent.indexOf(searchString);
+            // const searchobj = subject.textContent.indexOf(searchString.toLowerCase());
+            console.log(searchobj);
+            if (searchobj === -1) {
+                subject.classList.add("hide");
+            } else {
+                subject.classList.remove("hide");
+            }
+        });
+    }, false);
 </script>
 
 </html>

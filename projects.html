@@ -53,8 +53,7 @@
         <section class="header">
             <div class="desktop">
                 <div class="spacer"></div>
-                <div class="spacer"></div>
-                <div class="slider">
+                <!-- <div class="slider"> -->
 
                 </div>
             </div>
@@ -108,12 +107,12 @@
     <section class="scroll1">
         <div class="gallery">
 
-            <div class="Column C1">
+            <!-- <div class="Column C1">
                 <a href="/projects/Basics-of-the-GRID.html">
                     <div class="screen"></div>
                     <h3>Lorem, ipsum dolor.</h3>
                 </a>
-            </div>
+            </div> -->
 
 
         </div>
@@ -147,18 +146,6 @@
         visitCount = 1;
         localStorage.setItem("page_view", 1);
     }
-
-
-    // Search engine
-    document.getElementById("search").addEventListener("keyup", function (evt) {
-        [].forEach.call(document.querySelectorAll(".subjects .subject"), function (subject) {
-            if (subject.textContent.indexOf(evt.target.value) === -1) {
-                subject.classList.add("hide");
-            } else {
-                subject.classList.remove("hide");
-            }
-        });
-    }, false);
 </script>
 
 </html>
