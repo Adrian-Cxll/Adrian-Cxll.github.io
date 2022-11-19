@@ -25,7 +25,6 @@
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
 
 <body class="">
-
     <header>
         <div id="header">
             <a href="/index.html">
@@ -44,10 +43,10 @@
     </label>
     <nav id="menu">
         <a href="/index.html">Home.</a>
-        <a href="/Bloglist.html">¡Blog!</a>
+        <a href="/Blogs.html">¡Blog!</a>
         <a href="/projects.html">Projects.</a>
-        <a href="/404">Informations.</a>
-        <a href="/404">Contact?</a> <!-- test without .html-->
+        <a href="/404.html">Informations.</a>
+        <a href="/404.html">Contact?</a>
     </nav>
 
     <div class="main-window">
@@ -60,9 +59,13 @@
                 </div>
             </div>
             <div class="mobile">
+                <div class="searchwrap">
+                    <input type="text" class="searchbar" placeholder="Search..">
+                </div>
                 <div class="wrap">
                     <div class="website-counter"></div>
-                    <button id="reset">Reset</button>
+                    <!-- <button id="reset">Reset</button> -->
+
 
                 </div>
             </div>
@@ -74,29 +77,29 @@
         <section class="category">
             <div class="grid category">
 
-                <a href="404.html" class="box-link">
+                <a href="project-search/Websites.html" class="box-link">
                     <div class="box box-1">
                         <div class="shadow"></div>
                         <span class="span1">Websites</span>
                     </div>
                 </a>
-                <a href="404.html" class="box-link">
+                <a href="project-search/snippets.html" class="box-link">
                     <div class="box box-2">
                         <div class="shadow"></div>
                         <span>Snippets</span>
                     </div>
                 </a>
-                <a href="404.html" class="box-link">
+                <a href="project-search/games.html" class="box-link">
                     <div class="box box-3">
                         <div class="shadow"></div>
                         <span>Games</span>
 
                     </div>
                 </a>
-                <a href="404.html" class="box-link">
+                <a href="project-search/programms.html" class="box-link">
                     <div class="box box-4">
                         <div class="shadow"></div>
-                        <span>Tutorials</span>
+                        <span>Programm</span>
                     </div>
                 </a>
         </section>
@@ -117,14 +120,45 @@
         </div>
         </div>
     </section>
-    <!-- <div class="spacer"></div> -->
-    <!-- <div class="spacer"></div> -->
-
-
-
 
 
     </div>
+
+
 </body>
+<script>
+    // Visit Counter
+    var counterContainer = document.querySelector(".website-counter");
+    var resetButton = document.querySelector("#reset");
+    var visitCount = localStorage.getItem("page_view");
+
+    // Check if page_view entry is present
+    if (visitCount) {
+        visitCount = Number(visitCount) + 1;
+        localStorage.setItem("page_view", visitCount);
+    } else {
+        visitCount = 1;
+        localStorage.setItem("page_view", 1);
+    }
+    counterContainer.innerHTML = ('<i class="fa fa-circle" aria-hidden="true"></i>') + visitCount + ('<span class="Visits"><br></br>Visits</span>');
+
+    // page_view value safety
+    if (localStorage.getItem("page_view", 1) >= 999999) {
+        visitCount = 1;
+        localStorage.setItem("page_view", 1);
+    }
+
+
+    // Search engine
+    document.getElementById("search").addEventListener("keyup", function (evt) {
+        [].forEach.call(document.querySelectorAll(".subjects .subject"), function (subject) {
+            if (subject.textContent.indexOf(evt.target.value) === -1) {
+                subject.classList.add("hide");
+            } else {
+                subject.classList.remove("hide");
+            }
+        });
+    }, false);
+</script>
 
 </html>

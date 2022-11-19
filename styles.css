@@ -675,6 +675,17 @@ nav {
   transition: transform 0.5s cubic-bezier(0.19, 1, 0.22, 1);
 }
 
+@media (max-width:450px) {
+  nav {
+    width: 50vw;
+    z-index: 1;
+  }
+  label .burger {
+    top: 2rem !important;
+  }
+
+}
+
 nav::before {
   position: absolute;
   top: 0;
@@ -874,7 +885,7 @@ main .content {
   }
 
 
-  
+
   .burger_menu {
     left: calc(100vw - 8rem);
   }

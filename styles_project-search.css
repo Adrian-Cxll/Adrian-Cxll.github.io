@@ -1,0 +1,89 @@
+.hide {
+    display: none;
+}
+
+.heading-img {
+    height: 60vh;
+    width: 100%;
+    z-index: -1;
+    position: fixed;
+    background-image: url(/img/Projects-Search-Title-Gaming.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+
+}
+
+.main-window {
+    background-color: #ececec !important;
+}
+
+.searchbar {
+    position: relative !important;
+    opacity: 1 !important;
+}
+
+.searchwrap {
+    height: 5rem;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.heading {
+    text-align: center;
+    height: 60vh;
+    overflow: hidden;
+    object-fit: cover;
+    /* background-image: url(/img/Projects-Search-Title-Gaming.jpg); */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+
+}
+
+@media (max-width:1353px) {
+
+    .heading {
+        height: 40vh;
+    }
+
+    h1 {
+        font-size: 8rem !important;
+    }
+}
+
+.box > span {
+    font-size: 2rem !important;
+}
+
+.searchbar {
+    border-radius: 15px;
+    float: right;
+    background-color: rgb(111, 40, 50);
+    color: white;
+    padding: 6px 10px;
+    width: 120px;
+    border: none;
+    margin-top: 1px;
+    margin-right: 8px;
+    font-size: 2rem;
+    transition: 0.3s;
+}
+
+.searchbar::placeholder {
+    color: white;
+    font-family: inherit, sans-serif;
+    transition: 0.2s;
+}
+
+.searchbar:focus {
+    width: 400px;
+    color: white;
+    font-family: inherit, sans-serif;
+    font-size: 1.6rem;
+    transition: 0.3s;
+    border-bottom: white solid 2px;
+    outline: none;
+}
