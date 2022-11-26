@@ -248,7 +248,6 @@ body[data-nav="false"] #nav-contact-section {
     }
 }
 
-
 /* main content part */
 
 header {
@@ -259,7 +258,8 @@ header {
 
 header>* {
     margin-left: 5%;
-    font-family: 'Orbitron', sans-serif;}
+    font-family: 'Orbitron', sans-serif;
+}
 
 header>h1 {
     padding-top: 7vh;
@@ -417,7 +417,7 @@ footer {
     height: 20rem;
 }
 
-footer>table {
+table {
     text-align: center;
     margin: auto;
     border-spacing: 5em 2em;
@@ -431,4 +431,79 @@ th {
 
 th {
     border-bottom: 2px solid var(--blue-aczent);
+}
+
+/* equipment PAGE */
+.Equipment header.img {
+    background-image: url("../../img/alexander-jawfox-Mu0ExSKTOBs-unsplash.jpg");
+}
+
+.secondarypage p {
+    padding-top: 5rem;
+    font-size: var(--font-size-middle);
+}
+
+.secondarypage span {
+    color: var(--yellow);
+    font-family: 'Orbitron', sans-serif;
+}
+
+.Equipment #equipment {
+    background: linear-gradient(225deg, rgba(72, 56, 69, 0) 0%, rgb(72, 56, 69) 100%);
+}
+
+.Equipment .zusammenarbeit {
+    background: url("../../img/matteo-modica-_G6wD5ZIIGE-unsplash.jpg");
+    width: 20vw;
+    height: 40vh;
+}
+
+/* Private PAGE */
+
+
+.Private header.img {
+    background-image: url("../../img/demidov-armor-444M6ruAFhM-unsplash.jpg");
+    background-position: 50% 10%;
+}
+
+.Private .first {
+    padding: 5rem 20rem !important;
+}
+
+/* Public PAEG */
+
+.Public header.img {
+    background-image: url("../../img/julien-dumas-xbHDYmDyE48-unsplash.jpg");
+    background-position: 50% 70%;
+}
+
+/* Description PAGE */
+
+.Description main {
+    background-color: transparent;
+    overflow: hidden;
+    position: relative;
+}
+
+.Description footer {
+    background-color: #000;
+}
+.Description div.backround {
+    z-index: -1;
+    width: 150% !important;
+    height: 3000%;
+    animation: slide 140s linear infinite;
+    background-color: black;
+    background-image: radial-gradient(rgba(78, 43, 63, 0.4) 9%, transparent 9%);
+    background-position: 0% 0%;
+    background-size: 50px 50px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -100;
+}
+
+.Description section#private {
+    background-color: transparent !important;
+    overflow: hidden;
 }
