@@ -201,7 +201,7 @@ label::before {
 
 main {
     margin-left: var(--nav-closed-width) !important;
-    width: 100%;
+    width: calc(100vw - var(--nav-closed-width));
     background-color: var(--black);
     content: "";
 }
@@ -279,7 +279,7 @@ section#division {
 }
 
 section#division>a {
-    margin: auto !important;
+    /* margin: auto !important; */
     width: 20rem;
     height: 15rem;
     background-color: blueviolet;
@@ -357,8 +357,6 @@ section#private>.first {
     padding: 10rem 20rem;
     display: flex;
 }
-
-/* section#private>div>img */
 
 div.first>.img {
     overflow: hidden;
