@@ -106,7 +106,7 @@ nav {
 }
 
 body[data-nav="true"] nav {
-    background-color: rgba(0, 0, 0, 0.73);
+    background-color: rgba(0, 0, 0, 0.3);
 }
 
 body[data-nav="true"] nav>div.backround {
