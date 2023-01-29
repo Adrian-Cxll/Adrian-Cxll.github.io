@@ -62,18 +62,17 @@
         <div class="spacer"></div>
         <div class="grid">
             <div class="box" onclick="link1()">
-                <img class="img-zoom" src="../img/preview/Seccur.png"
-                    alt="">
+                <img class="img-zoom" src="../img/preview/Seccur.png" alt="">
                 <span style="position: absolute;">Seccur</span>
             </div>
-            <!-- <div class="box" onclick="link3()">
+            <div class="box" onclick="link3()">
                 <img class="img-zoom"
-                    src="https://images.unsplash.com/photo-1555664424-778a1e5e1b48?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80"
+                    src="../img/404Backround01.jpg"
                     alt="">
-                <span style="position: absolute;">[Guide] How to get started with Arduino</span>
+                <span style="position: absolute;">Game - Presentation [01]</span>
 
             </div>
-            <div class="box" onclick="link4()">
+            <!--<div class="box" onclick="link4()">
                 <img class="img-zoom"
                     src="https://images.unsplash.com/photo-1602932365975-18086e1491b4?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1472&q=80"
                     alt="">
@@ -99,7 +98,7 @@
         window.location.href = "../404.html";
     }
     function link3() {
-        window.location.href = "../404.html";
+        window.location.href = "../";
     }
     function link4() {
         window.location.href = "../404.html";
@@ -115,10 +114,10 @@
         const searchString = evt.target.value;
         // console.log(searchString);
         [].forEach.call(document.querySelectorAll(".grid .box"), function (subject) {
-
+            searchString.toLowerCase()
             const searchobj = subject.textContent.indexOf(searchString);
             // const searchobj = subject.textContent.indexOf(searchString.toLowerCase());
-            console.log(searchobj);
+            console.log(searchobj.toLowerCase);
             if (searchobj === -1) {
                 subject.classList.add("hide");
             } else {
