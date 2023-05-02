@@ -115,7 +115,7 @@
         // console.log(searchString);
         [].forEach.call(document.querySelectorAll(".grid .box"), function (subject) {
             searchString.toLowerCase()
-            const searchobj = subject.textContent.indexOf(searchString);
+            const searchobj = subject.textContent.toLowerCase().indexOf(searchString.toLowerCase());
             // const searchobj = subject.textContent.indexOf(searchString.toLowerCase());
             console.log(searchobj.toLowerCase);
             if (searchobj === -1) {
