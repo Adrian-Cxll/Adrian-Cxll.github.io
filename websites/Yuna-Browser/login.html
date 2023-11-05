@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ユウナ - Login</title>
+    <link rel="stylesheet" href="style/login.css">
+    <link rel="stylesheet" href="style/style.css">
+
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+</head>
+
+<body>
+    <header>
+        <h1 translate="no">ユウナ</h1>
+    </header>
+    <main>
+        <form class="form" id="login">
+
+            <!-- should change form id login to signup -->
+            <label id="lbl-loginORsignin" for="loginORsignin">
+                <input type="checkbox" id="loginORsignin" />
+                <h4 translate="no" id="lbl-signin">Sign up</h4> | <h4 id="lbl-login">Login</h4>
+            </label>
+            <label for="email">
+                <h5>Email :</h5>
+            </label>
+            <input type="email" name="Input-em" id="email" placeholder="Username or Email" oninvalid="errorUser()" required autofocus>
+            <label for="password">
+                <h5>Password :</h5>
+            </label>
+            <input type="password" name="Input-pw" id="password" placeholder="Password" required>
+            <small id="wrong-pw"></small>
+            <input translate="no" id="submit" type="submit" value="Log in">
+        </form>
+    </main>
+    <footer id="footer">
+        <div id="footer-tip" tabindex=0>
+            <span translate="no" id="footer-tip-symbol" class="material-symbols-outlined">expand_less</span>
+        </div>
+        <h5 translate="no">©2023 <a href="http://glowman554.de/">Glowman554</a>, <a
+                href="https://adrian-cxll.github.io/">Adrian-Cxll</a>. All rights reserved.</h5>
+        <a href="">Privacy Policy.</a>
+        <a href="">Terms of Use.</a>
+    </footer>
+    <script src="script/script.js"></script>
+    <script src="script/login.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+</body>
+
+</html>

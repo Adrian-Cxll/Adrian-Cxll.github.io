@@ -1,0 +1,14 @@
+h1 {
+    height: 0rem;
+    font-size: 10rem !important;
+    z-index: -1 !important;
+    transform: translateY(-9.5rem);
+}
+
+@media screen and (max-width: 820px) {
+    h1 {
+        font-size: 5rem !important;
+        transform: translateY(-4.5rem);
+
+    }
+}

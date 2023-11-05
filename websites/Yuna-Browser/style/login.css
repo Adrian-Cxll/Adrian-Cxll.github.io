@@ -1,0 +1,59 @@
+form {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--primary);
+    border-radius: var(--border-radius);
+    padding: 1rem;
+}
+
+@media screen and (max-width: 820px) {
+    form {
+        width: 80%;
+    }
+}
+
+form * {
+    margin: 0.5rem;
+}
+
+form small {
+    opacity: 0;
+    color: red;
+}
+
+#lbl-loginORsignin {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid var(--text);
+}
+
+#lbl-login,
+#lbl-signin {
+    padding: 0.2rem 0.2rem 0.4rem 0.2rem;
+    width: 100%;
+    text-align: center;
+    transition: ease 100ms;
+    border: 2px solid var(--accent);
+    background-size: 400% 400%;
+    animation: gradient 20s ease infinite;
+}
+
+#lbl-signin {
+    color: var(--accent);
+    border-radius: var(--border-radius) 0 0 var(--border-radius);
+    border-right: none;
+}
+
+#lbl-login {
+    /* background-color: var(--accent); */
+    background: linear-gradient(-45deg, #a460a9, #ca48d3);    
+    border-radius: 0 var(--border-radius) var(--border-radius) 0;
+    border-left: none;
+}
+
+#loginORsignin {
+    display: none;
+}

@@ -1,0 +1,217 @@
+@import url('https://fonts.googleapis.com/css?family=Noto Sans SC:700|Noto Sans SC:400');
+
+@media (prefers-color-scheme: light) {
+    :root {
+        --text: #0f0f0f;
+        --background: rgb(243, 243, 243);
+        --primary: #a8a8a8;
+        --secondary: #e0e0e0;
+        --accent: #7a7a7a;
+        --background-gradient-1: rgba(238, 174, 202, 1);
+        --background-gradient-2: rgba(148, 187, 233, 1);
+    }
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --text: #f0f0f0;
+        --background: #2c2c2c;
+        --primary: #575757;
+        --secondary: #1f1f1f;
+        --accent: #858585;
+        --background-gradient-1: #254956;
+        --background-gradient-2: #71474e;
+    }
+}
+
+:root {
+    --border-radius: 7px;
+
+    --accent-grad-1: #a460a9;
+    --accent-grad-2: #ca48d3;
+
+
+}
+
+
+/* color decision? */
+::selection {
+    /* color: var(--accent); */
+    background: var(--primary);
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Noto Sans SC, Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    color: var(--text);
+    user-select: none;
+}
+
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    font-family: 'Noto Sans SC';
+    /* font-weight: 700; */
+}
+
+html {
+    font-size: 100%;
+}
+
+/* 16px */
+
+h1 {
+    font-size: 3.4rem;
+    /* x */
+}
+
+h2 {
+    font-size: 3.158rem;
+    /* 50.56px */
+}
+
+h3 {
+    font-size: 2.369rem;
+    /* 37.92px */
+}
+
+h4 {
+    font-size: 1.377rem;
+    /* x */
+}
+
+h5,
+a {
+    font-size: 1.033rem;
+    /* x-px */
+}
+
+small {
+    font-size: 0.750rem;
+    /* 12px */
+}
+
+
+@media screen and (max-width: 820px) {
+    input {
+        font-size: 12px !important;
+    }
+
+    h4 {
+        font-size: 1.133rem;
+    }
+
+    h5,
+    a {
+        font-size: 0.8rem;
+    }
+
+    #footer-tip {
+        bottom: -1.033rem !important;
+    }
+    footer h5, a {
+        font-size: 0.5rem;
+    }
+}
+
+/* body {
+    background-color: var(--background);
+} */
+
+body {
+    background: rgb(238, 174, 202);
+    background: radial-gradient(circle, var(--background-gradient-1) 0%, var(--background-gradient-2) 100%);
+    /* background: linear-gradient(-45deg, #ee7652, #e73c7e, #23a5d5, #23d5ab); */
+    background-size: 400% 400%;
+    animation: gradient 30s ease infinite;
+    height: 100vh;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+/* ----------------------------------------------- */
+
+main,
+header {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+header * {
+    z-index: 1;
+}
+
+main {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    /* maybe fix?! */
+}
+
+footer {
+    z-index: 2;
+    background-color: var(--primary);
+    padding: 0.5%;
+    width: 100%;
+    position: fixed;
+    bottom: calc(-3* 1.033rem);
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    transition: ease-in-out 250ms;
+}
+
+footer * {
+    z-index: 2;
+}
+
+#footer-tip {
+    width: 3rem;
+    height: 3rem;
+    clip-path: polygon(74% 7%, 90% 20%, 100% 40%, 100% 48%, 100% 100%, 0 100%, 0 40%, 10% 20%, 26% 7%, 50% 0);
+    background-color: var(--primary);
+    position: absolute;
+    top: -3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media screen and (max-width: 820px) {
+    #footer {
+        bottom: -1.033rem !important;
+    }
+}
+
+input {
+    font-size: 16px;
+    background-color: var(--accent);
+    border: none;
+    border-radius: 0.5rem;
+    padding: 1rem;
+    /* outline: none ! important; */
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+}
