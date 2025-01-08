@@ -116,7 +116,6 @@ ul {
 }
 
 .repo div {
-    margin: 2rem;
     padding: 1.5rem;
 }
 
@@ -156,5 +155,25 @@ ul {
 
     .cpyrght {
         padding-top: 1.5rem;
+    }
+}
+
+@media screen and (max-device-width: 1300px) {
+    .cube {
+        margin: 2rem 0 !important;
+    }
+
+    .aWRap {
+        margin: 1rem !important;
+    }
+
+    object {
+        height: 500px;
+        width: 85%;
+    }
+
+
+    h2 {
+        padding: 1rem 1vw;
     }
 }
